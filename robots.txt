@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://floristerialunarosa.dondeseria.com/sitemap.xml

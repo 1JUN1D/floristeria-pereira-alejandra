@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNRL6V5MSP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNRL6V5MSP');
+</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de Floristería Luna Rosa en Pereira: 40 diseños entre ramos de rosas, girasoles, cajas y cofres florales, arreglos con chocolates y peluches. Domicilio en toda la ciudad.">
+    <meta name="keywords" content="catálogo flores Pereira, ramos de rosas Pereira, girasoles Pereira, cajas de rosas, arreglos con chocolates, Floristería Luna Rosa">
+    <title>Catálogo de Productos - Floristería Luna Rosa | Flores y Ramos Fúnebres en Pereira</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Catálogo de Productos - Floristería Luna Rosa Pereira">
+    <meta property="og:description" content="Ramos, cajas de rosas, arreglos con chocolates y diseños fúnebres, entregados a domicilio en Pereira">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://floristerialunarosa.dondeseria.com/catalogo">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalog.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.webp">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="catalog-hero">
+        <div class="container">
+            <h1>Nuestro Catálogo</h1>
+            <p>Floristería Luna Rosa · 40 diseños entre ramos, cajas de rosas y arreglos fúnebres, con domicilio en toda Pereira</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="catalog-filters">
+        <div class="container">
+            <div class="catalog-search">
+                <input type="search" id="product-search" placeholder="Buscar por nombre o código (ej. rosas o 014)" aria-label="Buscar producto por nombre o código">
+            </div>
+            <div class="filters-container">
+                <span class="filter-label">Filtrar por:</span>
+                <button class="filter-btn active" data-filter="todos">Todos los Productos</button>
+                <button class="filter-btn" data-filter="girasoles">Girasoles</button>
+                <button class="filter-btn" data-filter="rosas-rojas">Rosas Rojas</button>
+                <button class="filter-btn" data-filter="rosas-rosadas">Rosas Rosadas</button>
+                <button class="filter-btn" data-filter="chocolates">Flores y Chocolates</button>
+                <button class="filter-btn" data-filter="cajas">Cajas y Cofres</button>
+                <button class="filter-btn" data-filter="mix">Ramos Mix</button>
+                <button class="filter-btn" data-filter="precio-bajo">Menos de $100.000</button>
+                <button class="filter-btn" data-filter="precio-medio">$100.000 - $200.000</button>
+                <button class="filter-btn" data-filter="precio-alto">Más de $200.000</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Counter -->
+    <div class="results-counter">
+        <div class="container">
+            Mostrando <strong id="results-count">40</strong> productos
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Los productos se generarán aquí -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state">
+                <h3>No se encontraron productos</h3>
+                <p>Prueba con un filtro diferente para descubrir más alternativas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">×</button>
+            <img src="" alt="" class="lightbox-image" id="lightbox-image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-price"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- WhatsApp Button -->
+    <div id="whatsapp-button-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        // Datos de productos completos - Floristería Luna Rosa Pereira
+const products = [
+    {
+        id: 1,
+        name: "Girasoles y Rosas Rojas Vino",
+        price: 87500,
+        image: "assets/1.webp",
+        description: "Tres girasoles bien abiertos rodeados de rosas rojas y ramas de eucalipto, envueltos en papel vino y mostaza. Un ramo cálido y luminoso que combina fuerza y romance en la misma mano.",
+        categories: ["girasoles", "rosas-rojas", "precio-bajo"]
+    },
+    {
+        id: 2,
+        name: "Girasoles y Rosas con Corazones",
+        price: 100000,
+        image: "assets/2.webp",
+        description: "Girasoles y rosas rojas acompañados de statice lila y blanco, presentados en envoltura blanca estampada con corazones. Alegre y romántico a la vez, ideal para un aniversario.",
+        categories: ["girasoles", "rosas-rojas", "mix", "precio-medio"]
+    },
+    {
+        id: 3,
+        name: "Torta Floral de Rosas Rosadas",
+        price: 937500,
+        image: "assets/3.webp",
+        description: "Espectacular torta de tres pisos elaborada con cientos de rosas fucsia y rosadas sobre base cilíndrica blanca, rematada con lazo de satín. La pieza más impactante de nuestro catálogo para un cumpleaños inolvidable.",
+        categories: ["rosas-rosadas", "cajas", "precio-alto"]
+    },
+    {
+        id: 4,
+        name: "Corazón de Rosas con Vino y Chocolates",
+        price: 262500,
+        image: "assets/4.webp",
+        description: "Caja corazón en negro colmada de rosas rojas con cristales, acompañada de una botella de vino tinto y un estuche de chocolates. Un regalo completo para decir «te amo» en grande.",
+        categories: ["rosas-rojas", "cajas", "chocolates", "precio-alto"]
+    },
+    {
+        id: 5,
+        name: "Ramo Pastel con Mariposas",
+        price: 200000,
+        image: "assets/5.webp",
+        description: "Abundante ramo de rosas en tonos rosa, lila y marfil, enmarcado en gypsophila teñida y mariposas decorativas. Delicadeza y ensueño en una sola composición de gran formato.",
+        categories: ["rosas-rosadas", "mix", "precio-medio"]
+    },
+    {
+        id: 6,
+        name: "Cofre de Girasoles con Rosa en Cúpula",
+        price: 262500,
+        image: "assets/6.webp",
+        description: "Base circular negra con corona de girasoles, bombones Ferrero y una rosa amarilla preservada bajo cúpula de cristal. Elegancia luminosa que se conserva mucho después del día especial.",
+        categories: ["girasoles", "cajas", "chocolates", "precio-alto"]
+    },
+    {
+        id: 7,
+        name: "Arreglo Piramidal de Girasoles y Rosas",
+        price: 262500,
+        image: "assets/7.webp",
+        description: "Imponente composición en degradado que une girasoles y decenas de rosas rojas sobre base de madera. Perfecto para homenajes, aniversarios y celebraciones que merecen protagonismo.",
+        categories: ["girasoles", "rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 8,
+        name: "Caja de Rosas con Fresas Achocolatadas",
+        price: 125000,
+        image: "assets/8.webp",
+        description: "Rosas rojas en caja negra acompañadas de fresas bañadas en chocolate y mariposas doradas. Dulzura y elegancia para una sorpresa que se disfruta con todos los sentidos.",
+        categories: ["rosas-rojas", "cajas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 9,
+        name: "Ramo Imperial de Rosas y Girasoles",
+        price: 225000,
+        image: "assets/9.webp",
+        description: "Generoso ramo de rosas rojas coronado por girasoles, envuelto en papel negro con lunares dorados y tarjeta de regalo. Una declaración de amor con presencia y estilo.",
+        categories: ["girasoles", "rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 10,
+        name: "Cofre Gran Lujo de 100 Rosas",
+        price: 1000000,
+        image: "assets/10.webp",
+        description: "Caja negra de gran formato repleta de rosas rojas, acompañada de globos metalizados en forma de corazón. Nuestro gesto más imponente, reservado para una ocasión irrepetible.",
+        categories: ["rosas-rojas", "cajas", "precio-alto"]
+    },
+    {
+        id: 11,
+        name: "Girasoles y Rosas con Globo de Corazón",
+        price: 200000,
+        image: "assets/11.webp",
+        description: "Ramo de girasoles y rosas rojas en envoltura negra tipografiada, con globo metalizado de corazón y estuche de regalo. Una sorpresa completa, lista para entregar.",
+        categories: ["girasoles", "rosas-rojas", "precio-medio"]
+    },
+    {
+        id: 12,
+        name: "Ramo Kraft de Girasoles y Rosas",
+        price: 100000,
+        image: "assets/12.webp",
+        description: "Girasoles y rosas rojas con follaje fresco en envoltura kraft y lazo coral, con tarjeta incluida. Un clásico cálido y espontáneo que funciona cualquier día del año.",
+        categories: ["girasoles", "rosas-rojas", "precio-medio"]
+    },
+    {
+        id: 13,
+        name: "Caja de Cumpleaños en Tonos Rosa",
+        price: 137500,
+        image: "assets/13.webp",
+        description: "Composición en caja blanca con hortensias, rosas y claveles en degradado rosa, globo, tarjeta festiva y bombones. Un cumpleaños entero servido en flores.",
+        categories: ["rosas-rosadas", "cajas", "mix", "precio-medio"]
+    },
+    {
+        id: 14,
+        name: "Ramo de Girasoles con Panda «Te Amo»",
+        price: 312500,
+        image: "assets/14.webp",
+        description: "Corona de girasoles en envoltura negra con un peluche panda que sostiene un corazón «Te Amo» y estuche de regalo. Ternura y luz en formato XL.",
+        categories: ["girasoles", "precio-alto"]
+    },
+    {
+        id: 15,
+        name: "Caja «Just For You» de Rosas y Ferrero",
+        price: 162500,
+        image: "assets/15.webp",
+        description: "Rosas rojas y bombones Ferrero Rocher dispuestos en media luna dentro de una caja blanca con lazo rojo y tarjeta. Un detalle elegante y goloso a la vez.",
+        categories: ["rosas-rojas", "cajas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 16,
+        name: "Cúpula Multicolor de Rosas",
+        price: 562500,
+        image: "assets/16.webp",
+        description: "Domo generoso de rosas en fucsia, lila, coral y marfil sobre base negra, con tarjeta personalizada. Color y abundancia para una celebración a lo grande.",
+        categories: ["rosas-rosadas", "mix", "cajas", "precio-alto"]
+    },
+    {
+        id: 17,
+        name: "Ramo de Rosas con Banda Personalizada",
+        price: 187500,
+        image: "assets/17.webp",
+        description: "Ramo abundante de rosas rojas en envoltura negra con banda de satín personalizada en letras doradas. Ideal para cumpleaños con mensaje propio.",
+        categories: ["rosas-rojas", "precio-medio"]
+    },
+    {
+        id: 18,
+        name: "Canasta de 100 Rosas Rojas",
+        price: 562500,
+        image: "assets/18.webp",
+        description: "Canasta de mimbre desbordada de rosas rojas de tallo largo con follaje natural y lazo rojo. Un clásico monumental para momentos que se recuerdan toda la vida.",
+        categories: ["rosas-rojas", "precio-alto"]
+    },
+    {
+        id: 19,
+        name: "Rosas, Oso y Globos de Corazón",
+        price: 512500,
+        image: "assets/19.webp",
+        description: "Cofre negro de rosas rojas acompañado de un oso de peluche de gran tamaño y globos metalizados en forma de corazón. La sorpresa que nadie olvida.",
+        categories: ["rosas-rojas", "cajas", "precio-alto"]
+    },
+    {
+        id: 20,
+        name: "Ramo «¿Quieres Ser Mi Novia?»",
+        price: 162500,
+        image: "assets/20.webp",
+        description: "Rosas rojas en envoltura roja con bombones Ferrero, mariposas doradas y globo con la pregunta más esperada. Pensado para declararse sin dudarlo.",
+        categories: ["rosas-rojas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 21,
+        name: "Ramo de Girasoles con Solidago",
+        price: 162500,
+        image: "assets/21.webp",
+        description: "Girasoles frescos combinados con solidago amarillo y follaje verde, en envoltura negra tipografiada. Energía pura para alegrar cualquier espacio.",
+        categories: ["girasoles", "precio-medio"]
+    },
+    {
+        id: 22,
+        name: "Aro de Rosas con Espejo Personalizado",
+        price: 187500,
+        image: "assets/22.webp",
+        description: "Corona de rosas rosadas y marfil con gypsophila alrededor de un espejo grabado con tu mensaje. Un regalo original que queda como recuerdo mucho después.",
+        categories: ["rosas-rosadas", "mix", "precio-medio"]
+    },
+    {
+        id: 23,
+        name: "Girasoles con Astromelias Blancas",
+        price: 112500,
+        image: "assets/23.webp",
+        description: "Girasoles abiertos con astromelias blancas y gypsophila en envoltura rosa con corazones. Frescura luminosa con un toque tierno.",
+        categories: ["girasoles", "mix", "precio-medio"]
+    },
+    {
+        id: 24,
+        name: "Cofre Corona de Rosas y Ferrero",
+        price: 537500,
+        image: "assets/24.webp",
+        description: "Caja negra colmada de rosas rojas con un corazón de bombones Ferrero en el centro y corona decorativa. Para tratar como reina a quien lo recibe.",
+        categories: ["rosas-rojas", "cajas", "chocolates", "precio-alto"]
+    },
+    {
+        id: 25,
+        name: "Ramo Clásico de Rosas en Negro",
+        price: 112500,
+        image: "assets/25.webp",
+        description: "Rosas rojas de tallo largo envueltas en papel negro y tul, rematadas con lazo rojo. Sobriedad y pasión en el ramo más atemporal.",
+        categories: ["rosas-rojas", "precio-medio"]
+    },
+    {
+        id: 26,
+        name: "Caja de Rosas Azules",
+        price: 100000,
+        image: "assets/26.webp",
+        description: "Doce rosas azules de tono intenso en caja negra con lazo de satín a juego. Una elección diferente para quien no quiere recibir lo de siempre.",
+        categories: ["cajas", "precio-medio"]
+    },
+    {
+        id: 27,
+        name: "Caja de Rosas Amarillas y Ferrero",
+        price: 125000,
+        image: "assets/27.webp",
+        description: "Rosas amarillas con gypsophila y bombones Ferrero en caja cuadrada negra con lazo dorado, tarjeta y guía de cuidados. Alegría y buenos deseos en un mismo detalle.",
+        categories: ["cajas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 28,
+        name: "Combo Rosas, Oso y Chocolates",
+        price: 425000,
+        image: "assets/28.webp",
+        description: "Ramo de rosas rojas con cristales, oso de peluche con estuche Ferrero Rocher y globos metalizados en forma de estrella. Un combo pensado para aniversarios que se celebran por todo lo alto.",
+        categories: ["rosas-rojas", "chocolates", "precio-alto"]
+    },
+    {
+        id: 29,
+        name: "Bolso Floral con Fresas y Globo",
+        price: 162500,
+        image: "assets/29.webp",
+        description: "Base tipo bolso en beige acolchado repleta de gerberas, rosas y claveles, con fresas bañadas en chocolate y globo estrella. Colorido, femenino y muy original.",
+        categories: ["mix", "rosas-rosadas", "precio-medio"]
+    },
+    {
+        id: 30,
+        name: "Ramo de Rosas Amarillas",
+        price: 137500,
+        image: "assets/30.webp",
+        description: "Rosas amarillas con statice lila y gypsophila en envoltura crema y tarjeta incluida. Ideal para celebrar amistades, logros y nuevos comienzos.",
+        categories: ["mix", "precio-medio"]
+    },
+    {
+        id: 31,
+        name: "Arreglo Espiral con Peluche",
+        price: 175000,
+        image: "assets/31.webp",
+        description: "Rosas amarillas y rosadas dispuestas en espiral junto a girasoles y un tierno peluche con corazón. Una composición dulce para cumpleaños y aniversarios.",
+        categories: ["girasoles", "rosas-rosadas", "mix", "precio-medio"]
+    },
+    {
+        id: 32,
+        name: "Caja de Rosas con Virgen y Cajón de Chocolates",
+        price: 175000,
+        image: "assets/32.webp",
+        description: "Rosas rojas en caja blanca con figura de la Virgen y cajón inferior con bombones Ferrero. Un obsequio con significado para fechas muy especiales.",
+        categories: ["rosas-rojas", "cajas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 33,
+        name: "Ramo Lila con Girasol",
+        price: 62500,
+        image: "assets/33.webp",
+        description: "Margaritas lila, rosas rosadas y un girasol al centro en envoltura rosa y kraft. Un detalle fresco y accesible que siempre saca una sonrisa.",
+        categories: ["mix", "girasoles", "precio-bajo"]
+    },
+    {
+        id: 34,
+        name: "Ramo de Rosas Rosadas y Astromelias",
+        price: 62500,
+        image: "assets/34.webp",
+        description: "Rosas rosadas con astromelias blancas envueltas en papel rosa y terracota con cinta de satín. Suave, romántico y perfecto para un «pensé en ti».",
+        categories: ["rosas-rosadas", "precio-bajo"]
+    },
+    {
+        id: 35,
+        name: "Caja Cuadrada de Rosas Rojas",
+        price: 162500,
+        image: "assets/35.webp",
+        description: "Media luna de rosas rojas con follaje verde sobre caja cuadrada negra y lazo rojo, con tarjeta de mensaje. Estructura, color y elegancia para decir lo importante.",
+        categories: ["rosas-rojas", "cajas", "precio-medio"]
+    },
+    {
+        id: 36,
+        name: "Corazón de Rosas y Fresas con Chocolate",
+        price: 200000,
+        image: "assets/36.webp",
+        description: "Caja corazón dividida entre fresas cubiertas de chocolate y rosas rojas, con tarjeta personalizada. Uno de nuestros favoritos para cumpleaños y aniversarios.",
+        categories: ["rosas-rojas", "cajas", "chocolates", "precio-medio"]
+    },
+    {
+        id: 37,
+        name: "Caja de Rosas con Rosa Blanca Central",
+        price: 162500,
+        image: "assets/37.webp",
+        description: "Rosas rojas en caja negra con una rosa blanca destacada en el centro y tarjeta de mensaje. Detalle sobrio con un guiño de originalidad.",
+        categories: ["rosas-rojas", "cajas", "precio-medio"]
+    },
+    {
+        id: 38,
+        name: "Ramo Rosa con Lunares Dorados",
+        price: 137500,
+        image: "assets/38.webp",
+        description: "Rosas rosadas, claveles fucsia y astromelias en envoltura rosa con lunares dorados y tarjeta incluida. Un ramo festivo y muy fotogénico.",
+        categories: ["rosas-rosadas", "mix", "precio-medio"]
+    },
+    {
+        id: 39,
+        name: "Ramo Rosa y Marfil con Astromelias",
+        price: 87500,
+        image: "assets/39.webp",
+        description: "Rosas rosadas y marfil con astromelias y follaje fresco en envoltura crema y blanca. Un ramo equilibrado para regalar sin motivo… o por cualquiera.",
+        categories: ["rosas-rosadas", "mix", "precio-bajo"]
+    },
+    {
+        id: 40,
+        name: "Dúo Caja de Rosas y Rosa Eterna",
+        price: 400000,
+        image: "assets/40.webp",
+        description: "Caja negra que combina rosas rojas con bombones Ferrero, acompañada de una rosa preservada bajo cúpula de cristal. Un presente que dura mucho más que el día.",
+        categories: ["rosas-rojas", "cajas", "chocolates", "precio-alto"]
+    }
+];
+
+        // Estado de filtro y búsqueda
+        let currentFilter = 'todos';
+        let searchTerm = '';
+
+        // Código de referencia: 001, 002, 003...
+        function productCode(p) {
+            return String(p.id).padStart(3, '0');
+        }
+
+        // URL absoluta de la foto del producto
+        function productPhotoUrl(p) {
+            return 'http://floristerialunarosa.dondeseria.com/' + p.image.replace(/^\//, '');
+        }
+
+        // Normaliza texto para búsqueda sin tildes (u0300-u036f = acentos combinantes)
+        function normalizeText(t) {
+            return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+        }
+
+        // Renderizar productos
+        function renderProducts() {
+            const filter = currentFilter;
+            const grid = document.getElementById('products-grid');
+            const emptyState = document.getElementById('empty-state');
+            const resultsCount = document.getElementById('results-count');
+
+            let filteredProducts = products;
+
+            if (filter !== 'todos') {
+                filteredProducts = products.filter(product =>
+                    product.categories.includes(filter)
+                );
+            }
+
+            // Búsqueda por nombre o código
+            if (searchTerm.trim()) {
+                const q = normalizeText(searchTerm.trim());
+                filteredProducts = filteredProducts.filter(product =>
+                    normalizeText(product.name).includes(q) ||
+                    productCode(product).includes(q)
+                );
+            }
+
+            if (filteredProducts.length === 0) {
+                grid.style.display = 'none';
+                emptyState.classList.add('active');
+                resultsCount.textContent = '0';
+                return;
+            }
+
+            grid.style.display = 'grid';
+            emptyState.classList.remove('active');
+            resultsCount.textContent = filteredProducts.length;
+
+            grid.innerHTML = filteredProducts.map(product => `
+                <div class="product-card" data-categories="${product.categories.join(' ')}">
+                    <div class="product-image-container" onclick="openLightbox('${product.image}', '${product.name}', '${formatPrice(product.price)}')">
+                        <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                        <div class="zoom-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <line x1="11" y1="8" x2="11" y2="14"/>
+                                <line x1="8" y1="11" x2="14" y2="11"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        ${product.oldPrice ? `<div class="product-offer-badge">OFERTA</div>` : ''}
+                        <div class="product-ref">Ref. ${productCode(product)}</div>
+                        <h3 class="product-name">${product.name}</h3>
+                        <div class="product-description">${product.description}</div>
+                        <div class="product-footer">
+                            <div>
+                                <span class="price-label ${product.oldPrice ? 'price-label-old' : ''}">${product.oldPrice ? formatPrice(product.oldPrice) : 'Desde'}</span>
+                                <div class="product-price">${formatPrice(product.price)}</div>
+                            </div>
+                            <a href="https://wa.me/573126865031?text=${encodeURIComponent('Hola, me interesa el producto: ' + product.name + ' (Ref. ' + productCode(product) + ') - ' + formatPrice(product.price) + ' | Foto: ' + productPhotoUrl(product))}"
+                               class="btn-order"
+                               target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                Pedir Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Formatear precio
+        function formatPrice(price) {
+            return '$' + price.toLocaleString('es-CO');
+        }
+
+        // Filtros
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                renderProducts();
+                window.scrollTo({ top: 400, behavior: 'smooth' });
+            });
+        });
+
+        // Buscador por nombre o código
+        document.getElementById('product-search').addEventListener('input', function() {
+            searchTerm = this.value;
+            renderProducts();
+        });
+
+        // Lightbox
+        function openLightbox(image, name, price) {
+            document.getElementById('lightbox-image').src = image;
+            document.getElementById('lightbox-image').alt = name;
+            document.getElementById('lightbox-title').textContent = name;
+            document.getElementById('lightbox-price').textContent = price;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Botón volver arriba
+        const scrollTopBtn = document.getElementById('scroll-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 600) scrollTopBtn.classList.add('visible');
+            else scrollTopBtn.classList.remove('visible');
+        });
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Render inicial
+        renderProducts();
+    </script>
+</body>
+</html>
