@@ -1059,6 +1059,42 @@
         function normalizeText(t) { return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
         function formatPrice(price) { return '$' + price.toLocaleString('es-CO'); }
 
+
+        // ===== Orden por precio en columnas =====
+        // Los productos se ordenan de menor a mayor precio y se reparten
+        // por columnas: la 1a columna es la mas economica y la ultima la mas alta.
+        function gridColumnCount(grid) {
+            const t = getComputedStyle(grid).gridTemplateColumns;
+            if (!t || t === 'none') return 1;
+            return t.trim().split(/\s+/).filter(Boolean).length || 1;
+        }
+
+
+
+        function orderByPriceInColumns(list, grid) {
+            const sorted = list.slice().sort(function (a, b) {
+                return a.price - b.price || a.id - b.id;
+            });
+            const cols = gridColumnCount(grid);
+            if (cols <= 1 || sorted.length <= cols) return sorted;
+            const base = Math.floor(sorted.length / cols);
+            const rem = sorted.length % cols;
+            const sizes = [], starts = [];
+            let acc = 0;
+            for (let c = 0; c < cols; c++) {
+                sizes.push(base + (c < rem ? 1 : 0));
+                starts.push(acc);
+                acc += sizes[c];
+            }
+            const out = [];
+            for (let r = 0; r < sizes[0]; r++) {
+                for (let c = 0; c < cols; c++) {
+                    if (r < sizes[c]) out.push(sorted[starts[c] + r]);
+                }
+            }
+            return out;
+        }
+
         function renderProducts() {
             const grid = document.getElementById('products-grid');
             const emptyState = document.getElementById('empty-state');
@@ -1086,6 +1122,8 @@
             emptyState.classList.remove('active');
             resultsCount.textContent = filtered.length;
 
+            filtered = orderByPriceInColumns(filtered, grid);
+
             grid.innerHTML = filtered.map(p => {
                 const code = productCode(p);
                 const catTags = p.categories
@@ -1107,7 +1145,7 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">${p.name}</h3>
-                        <div class="product-description">${p.description}</div>
+                        <div class="product-description"><div class="pd-clamp">${p.description}</div></div>
                         <div class="product-footer">
                             <div>
                                 <span class="price-label">Desde</span>
@@ -1158,6 +1196,22 @@
 
         // Scroll to top
         const scrollTopBtn = document.getElementById('scroll-top');
+
+        // Reordena las columnas cuando cambia el ancho de la ventana
+        (function () {
+            let _rzTimer = null;
+            let _rzCols = null;
+            window.addEventListener('resize', function () {
+                clearTimeout(_rzTimer);
+                _rzTimer = setTimeout(function () {
+                    const g = document.getElementById('products-grid');
+                    if (!g || g.style.display === 'none') return;
+                    const c = gridColumnCount(g);
+                    if (c !== _rzCols) { _rzCols = c; renderProducts(); }
+                }, 180);
+            });
+        })();
+
         window.addEventListener('scroll', function() {
             if (window.pageYOffset > 600) scrollTopBtn.classList.add('visible');
             else scrollTopBtn.classList.remove('visible');

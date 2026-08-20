@@ -1,5 +1,5 @@
 /* =====================================================
-   LUNA ROSA · CATÁLOGO LUXURY v2 — Vitrinas de arco
+   LUNA ROSA · CATÁLOGO LUXURY v3 — Fichas editoriales
    CSS dedicado exclusivamente al catálogo de productos
    ===================================================== */
 
@@ -220,44 +220,41 @@
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 3rem 2.4rem;
+    gap: 4.2rem 2.8rem;
 }
 
 /* ===================================
-   PRODUCT CARD · vitrina de arco
+   PRODUCT CARD · ficha editorial
+   Sin marco: la foto manda, el texto
+   respira sobre el fondo crema.
    =================================== */
 .product-card {
-    background: #fff;
-    border-radius: 999px 999px 22px 22px;
-    overflow: hidden;
-    border: 1px solid rgba(22, 18, 28, 0.07);
-    box-shadow:
-        0 1px 2px rgba(22, 18, 28, 0.04),
-        0 14px 34px rgba(22, 18, 28, 0.06);
-    transition: transform 0.4s cubic-bezier(0.25, 0.6, 0.3, 1),
-                box-shadow 0.4s cubic-bezier(0.25, 0.6, 0.3, 1);
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    overflow: visible;
     display: flex;
     flex-direction: column;
-    padding: 12px 12px 0;
+    transition: none;
 }
 
 .product-card:hover {
-    transform: translateY(-9px);
-    box-shadow:
-        0 4px 10px rgba(22, 18, 28, 0.05),
-        0 34px 70px rgba(110, 68, 150, 0.18);
+    transform: none;
+    box-shadow: none;
 }
 
-/* La flor se exhibe bajo un arco con cerco dorado */
+/* La flor a sangre, sin recortes decorativos */
 .product-image-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1.12;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     cursor: pointer;
     background: var(--catalog-lavender);
-    border-radius: 999px 999px 14px 14px;
-    box-shadow: 0 0 0 1px rgba(201, 168, 106, 0.45);
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .product-image {
@@ -268,12 +265,11 @@
 }
 
 .product-card:hover .product-image {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
 
 .product-badge {
     position: absolute;
-    top: auto;
     bottom: 1rem;
     right: 1rem;
     background: var(--catalog-ink);
@@ -316,13 +312,32 @@
     color: #fff;
 }
 
+/* Bloque de texto: filete que se dibuja al pasar el mouse */
 .product-info {
-    padding: 1.6rem 1.2rem 1.7rem;
+    position: relative;
+    background: transparent;
+    text-align: left;
+    margin-top: 1.15rem;
+    padding: 1.35rem 0 0;
+    border-top: 1px solid var(--catalog-hairline);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    position: relative;
-    text-align: center;
+}
+
+.product-info::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--catalog-gold);
+    transition: width 0.55s cubic-bezier(0.25, 0.6, 0.3, 1);
+}
+
+.product-card:hover .product-info::before {
+    width: 100%;
 }
 
 /* Código de referencia */
@@ -332,40 +347,43 @@
     letter-spacing: 0.32em;
     color: var(--catalog-gold-deep);
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.45rem;
 }
 
-/* Florón separador bajo el nombre */
 .product-name {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.38rem;
+    font-size: 1.42rem;
     color: var(--catalog-ink);
-    margin-bottom: 0.9rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     line-height: 1.25;
-    position: relative;
-    padding-bottom: 0.95rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0;
 }
 
 .product-name::after {
-    content: '·❦·';
-    position: absolute;
-    bottom: -0.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--catalog-gold);
-    font-size: 0.8rem;
-    letter-spacing: 0.4em;
+    display: none;
 }
 
 .product-description {
     color: var(--catalog-gray);
-    line-height: 1.75;
-    margin-bottom: 1.4rem;
-    font-size: 0.89rem;
+    line-height: 1.72;
+    font-size: 0.87rem;
     font-weight: 300;
-    flex-grow: 1;
+    margin-bottom: 1.25rem;
+    /* Altura fija de 3 lineas: todas las fichas de una fila quedan parejas */
+    flex: 0 0 auto;
+    height: calc(0.87rem * 1.72 * 3);
+    overflow: hidden;
+}
+
+/* El recorte va en un bloque interno para que el navegador
+   pinte los puntos suspensivos de verdad (no funciona en un flex item) */
+.product-description .pd-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .product-description ul {
@@ -374,8 +392,7 @@
 }
 
 .product-description li {
-    padding: 0.25rem 0;
-    padding-left: 1.25rem;
+    padding: 0.25rem 0 0.25rem 1.25rem;
     position: relative;
     text-align: left;
 }
@@ -393,14 +410,17 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--catalog-hairline);
+    padding-top: 0;
+    border-top: 0;
     text-align: left;
+    /* order 3 + margin auto: el precio y el boton siempre al pie de la ficha */
+    order: 3;
+    margin-top: auto;
 }
 
 .product-price {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.72rem;
+    font-size: 1.5rem;
     color: var(--catalog-primary-deep);
     font-weight: 700;
     letter-spacing: -0.01em;
@@ -408,31 +428,25 @@
 }
 
 .price-label {
-    font-size: 0.6rem;
-    color: #9b93a6;
-    display: block;
-    margin-bottom: 0.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.24em;
-    font-weight: 500;
+    display: none;
 }
 
 .product-offer-badge {
-    position: absolute;
-    top: -0.7rem;
-    right: 1rem;
+    display: inline-block;
     background: linear-gradient(135deg, #C9A86A 0%, #A8853F 100%);
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     font-weight: 700;
     letter-spacing: 0.18em;
-    padding: 0.38rem 0.8rem;
-    border-radius: 999px;
-    box-shadow: 0 4px 14px rgba(201, 168, 106, 0.45);
-    z-index: 2;
+    padding: 0.32rem 0.7rem;
+    border-radius: 2px;
+    margin-bottom: 0.6rem;
+    align-self: flex-start;
 }
 
+/* Si hay precio anterior, se muestra tachado sobre el vigente */
 .price-label.price-label-old {
+    display: block;
     text-decoration: line-through;
     text-decoration-color: var(--catalog-primary);
     text-decoration-thickness: 1.5px;
@@ -441,38 +455,42 @@
     font-weight: 500;
     text-transform: none;
     letter-spacing: 0;
+    margin-bottom: 0.2rem;
 }
 
 .btn-order {
-    padding: 0.8rem 1.45rem;
-    background: #1EBE5D;
-    color: white;
-    border: none;
-    border-radius: 999px;
+    padding: 0.78rem 1.35rem;
+    background: transparent;
+    color: var(--catalog-ink);
+    border: 1px solid var(--catalog-ink);
+    border-radius: 0;
     font-family: inherit;
     font-weight: 600;
-    font-size: 0.79rem;
-    letter-spacing: 0.06em;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.6, 0.3, 1);
+    transition: background 0.35s ease, color 0.35s ease, border-color 0.35s ease;
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
+    gap: 0.5rem;
     text-decoration: none;
-    box-shadow: 0 8px 22px rgba(30, 190, 93, 0.28);
+    box-shadow: none;
     white-space: nowrap;
     line-height: 1;
 }
 
 .btn-order:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(30, 190, 93, 0.38);
-    background: #169549;
+    background: var(--catalog-ink);
+    color: #fff;
+    border-color: var(--catalog-ink);
+    transform: none;
+    box-shadow: none;
 }
 
 .btn-order svg {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     flex: none;
 }
 
@@ -621,7 +639,7 @@
 @media (max-width: 1024px) {
     .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 2.4rem 1.8rem;
+        gap: 3.2rem 2rem;
     }
 }
 
@@ -650,15 +668,16 @@
     }
 
     .product-name {
-        font-size: 1.26rem;
+        font-size: 1.3rem;
     }
 
     .product-price {
-        font-size: 1.5rem;
+        font-size: 1.42rem;
     }
 
     .btn-order {
-        padding: 0.75rem 1.25rem;
+        padding: 0.72rem 1.15rem;
+        font-size: 0.66rem;
     }
 
     .lightbox-content {
@@ -692,7 +711,8 @@
     .product-footer {
         flex-direction: column;
         align-items: stretch;
-        text-align: center;
+        text-align: left;
+        gap: 0.85rem;
     }
 
     .btn-order {
@@ -764,8 +784,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
-    justify-content: center;
-    margin-top: 1.1rem;
+    justify-content: flex-start;
+    /* order 2: las etiquetas van sobre el precio, no debajo del boton */
+    order: 2;
+    margin-top: 0;
+    margin-bottom: 1.1rem;
 }
 
 .product-tag {
@@ -774,7 +797,7 @@
     text-transform: uppercase;
     font-weight: 600;
     padding: 0.34rem 0.72rem;
-    border-radius: 999px;
+    border-radius: 2px;
     background: var(--catalog-lavender);
     color: var(--catalog-primary-deep);
     border: 1px solid rgba(140, 95, 191, 0.18);

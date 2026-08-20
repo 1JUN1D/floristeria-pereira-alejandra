@@ -463,6 +463,42 @@ const products = [
         }
 
         // Renderizar productos
+
+        // ===== Orden por precio en columnas =====
+        // Los productos se ordenan de menor a mayor precio y se reparten
+        // por columnas: la 1a columna es la mas economica y la ultima la mas alta.
+        function gridColumnCount(grid) {
+            const t = getComputedStyle(grid).gridTemplateColumns;
+            if (!t || t === 'none') return 1;
+            return t.trim().split(/\s+/).filter(Boolean).length || 1;
+        }
+
+
+
+        function orderByPriceInColumns(list, grid) {
+            const sorted = list.slice().sort(function (a, b) {
+                return a.price - b.price || a.id - b.id;
+            });
+            const cols = gridColumnCount(grid);
+            if (cols <= 1 || sorted.length <= cols) return sorted;
+            const base = Math.floor(sorted.length / cols);
+            const rem = sorted.length % cols;
+            const sizes = [], starts = [];
+            let acc = 0;
+            for (let c = 0; c < cols; c++) {
+                sizes.push(base + (c < rem ? 1 : 0));
+                starts.push(acc);
+                acc += sizes[c];
+            }
+            const out = [];
+            for (let r = 0; r < sizes[0]; r++) {
+                for (let c = 0; c < cols; c++) {
+                    if (r < sizes[c]) out.push(sorted[starts[c] + r]);
+                }
+            }
+            return out;
+        }
+
         function renderProducts() {
             const filter = currentFilter;
             const grid = document.getElementById('products-grid');
@@ -497,6 +533,8 @@ const products = [
             emptyState.classList.remove('active');
             resultsCount.textContent = filteredProducts.length;
 
+            filteredProducts = orderByPriceInColumns(filteredProducts, grid);
+
             grid.innerHTML = filteredProducts.map(product => `
                 <div class="product-card" data-categories="${product.categories.join(' ')}">
                     <div class="product-image-container" onclick="openLightbox('${product.image}', '${product.name}', '${formatPrice(product.price)}')">
@@ -514,7 +552,7 @@ const products = [
                         ${product.oldPrice ? `<div class="product-offer-badge">OFERTA</div>` : ''}
                         <div class="product-ref">Ref. ${productCode(product)}</div>
                         <h3 class="product-name">${product.name}</h3>
-                        <div class="product-description">${product.description}</div>
+                        <div class="product-description"><div class="pd-clamp">${product.description}</div></div>
                         <div class="product-footer">
                             <div>
                                 <span class="price-label ${product.oldPrice ? 'price-label-old' : ''}">${product.oldPrice ? formatPrice(product.oldPrice) : 'Desde'}</span>
@@ -579,6 +617,22 @@ const products = [
 
         // Botón volver arriba
         const scrollTopBtn = document.getElementById('scroll-top');
+
+        // Reordena las columnas cuando cambia el ancho de la ventana
+        (function () {
+            let _rzTimer = null;
+            let _rzCols = null;
+            window.addEventListener('resize', function () {
+                clearTimeout(_rzTimer);
+                _rzTimer = setTimeout(function () {
+                    const g = document.getElementById('products-grid');
+                    if (!g || g.style.display === 'none') return;
+                    const c = gridColumnCount(g);
+                    if (c !== _rzCols) { _rzCols = c; renderProducts(); }
+                }, 180);
+            });
+        })();
+
         window.addEventListener('scroll', function() {
             if (window.pageYOffset > 600) scrollTopBtn.classList.add('visible');
             else scrollTopBtn.classList.remove('visible');
