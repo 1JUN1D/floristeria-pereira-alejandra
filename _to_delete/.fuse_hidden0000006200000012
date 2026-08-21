@@ -1,0 +1,354 @@
+<!DOCTYPE html><html lang="es-CO"> <head> <meta charset="UTF-8"><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-MNY3LGE203"></script><script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-MNY3LGE203'); </script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Entrega a Domicilio de Flores en Pereira - Floristería Luna Rosa. Servicio rápido y confiable, entregas el mismo día en toda la ciudad. Seguimiento en tiempo real y confirmación con foto.">
+<meta name="keywords" content="entrega flores domicilio Pereira, flores a domicilio, entrega mismo día Pereira, servicio entrega flores, domicilios florería">
+<title>Entrega a Domicilio de Flores en Pereira - Floristería Luna Rosa | Servicio Express</title>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Entrega a Domicilio de Flores en Pereira - Floristería Luna Rosa">
+<meta property="og:description" content="Servicio de entrega rápido y confiable. Entregas el mismo día en toda Pereira con seguimiento y confirmación.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://floristerialunarosa.dondeseria.com/entrega-domicilio-pereira">
+<meta property="og:image" content="http://floristerialunarosa.dondeseria.com/assets/images/entrega-domicilio.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/service-template.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/logo.webp">
+
+<!-- Canonical -->
+<link rel="canonical" href="http://floristerialunarosa.dondeseria.com/entrega-domicilio-pereira">
+
+</head> <body> <!-- Navbar --> <div id="navbar-container"></div>
+
+<!-- Hero Section -->
+<section class="service-hero">
+    <div class="service-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1591768793355-74d04bb6608f?w=1920&q=80');"></div>
+    <div class="container">
+        <div class="service-hero-content">
+            <nav class="breadcrumb">
+                <a href="/">Inicio</a>
+                <span class="separator">›</span>
+                <a href="/entrega-de-flores-pereira.html">Entrega de Flores</a>
+                <span class="separator">›</span>
+                <span class="current">Entrega a Domicilio</span>
+            </nav>
+            <h1>Entrega a Domicilio de Flores en Pereira</h1>
+            <p class="service-tagline">
+                Un servicio rápido, confiable y puntual que lleva tus flores frescas exactamente al sitio y a la hora en que las necesitas
+            </p>
+            <div class="service-cta-buttons">
+                <a href="https://wa.me/573126865031?text=Hola,%20necesito%20entrega%20a%20domicilio%20en%20Pereira" class="btn btn-primary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Programar Entrega
+                </a>
+                <a href="tel:+573126865031" class="btn btn-secondary">
+                    📞 Llamar Ahora
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="service-content-section">
+    <div class="container">
+        <div class="service-content-grid">
+            <!-- Main Content -->
+            <div class="service-main-content">
+                <h2>Tu Servicio de Entrega Confiable en Pereira</h2>
+                <p>
+                    En Floristería Luna Rosa entendemos que el domicilio pesa tanto como el arreglo que se entrega. Por eso diseñamos un servicio a domicilio que combina rapidez, seguridad y esmero en cada paso, para que tus flores lleguen en perfecto estado, a tiempo y con la presentación que se merecen.
+                </p>
+
+                <div class="service-highlight-box">
+                    <h3>🚚 Características de Nuestro Servicio</h3>
+                    <ul>
+                        <li><strong>Entrega el Mismo Día:</strong> Ordena antes de las 2 PM y recibe tus flores hoy mismo</li>
+                        <li><strong>Cobertura Total:</strong> Entregas en toda Pereira y área metropolitana</li>
+                        <li><strong>Horario Coordinado:</strong> Programamos la entrega según tu conveniencia</li>
+                        <li><strong>Seguimiento en Tiempo Real:</strong> Sigue tu pedido desde la floristería hasta el destino</li>
+                        <li><strong>Confirmación con Foto:</strong> Recibe foto al momento de la entrega</li>
+                        <li><strong>Empaque Protector:</strong> Flores perfectamente protegidas durante el transporte</li>
+                    </ul>
+                </div>
+
+                <h2>Opciones de Entrega Según Tus Necesidades</h2>
+
+                <h3>⚡ Entrega Express (Mismo Día)</h3>
+                <p>
+                    ¿Las necesitas hoy mismo? Con nuestra modalidad express garantizamos la entrega el mismo día en cualquier sector de Pereira. Solo debes confirmar tu pedido antes de las 2:00 PM y definimos juntos la franja horaria que mejor te sirva. Es la salida ideal para ese cumpleaños que se te olvidó, una reconciliación que no da espera o una sorpresa de último momento.
+                </p>
+
+                <h3>📅 Entrega Programada</h3>
+                <p>
+                    Planea con calma y asegúrate de que el envío llegue exactamente el día que escojas. Puedes reservar tu entrega hasta con 30 días de antelación, eligiendo la fecha y el horario que más te acomoden. Perfecto para cumpleaños, aniversarios, fechas especiales o cuando prefieres no dejar nada a la suerte. Te mandaremos un recordatorio anticipado y confirmaremos contigo cada detalle.
+                </p>
+
+                <h3>🎯 Entrega en Horario Específico</h3>
+                <p>
+                    Cuando el momento exacto marca la diferencia, puedes pactar la entrega a una hora precisa con un margen de 30 minutos. Esta opción resulta ideal para sorpresas sincronizadas, envíos a oficinas con agendas apretadas, eventos donde la puntualidad manda o cuando necesitas que las flores lleguen alineadas con el resto de tu plan. Nos comprometemos a llegar dentro del horario acordado.
+                </p>
+
+                <h2>Tipos de Destinos Que Cubrimos</h2>
+                <p>
+                    Llevamos tus flores hasta donde nos indiques, adaptándonos a las exigencias propias de cada destino:
+                </p>
+
+                <ul>
+                    <li><strong>Domicilio Residencial:</strong> Casas, apartamentos, conjuntos cerrados y urbanizaciones</li>
+                    <li><strong>Oficinas Corporativas:</strong> Torres empresariales, centros de negocios y espacios de coworking</li>
+                    <li><strong>Hospitales y Clínicas:</strong> Entregas en habitaciones con protocolos de seguridad</li>
+                    <li><strong>Hoteles:</strong> Coordinación con recepción para entregas en habitaciones</li>
+                    <li><strong>Restaurantes:</strong> Sorpresas durante cenas o almuerzos especiales</li>
+                    <li><strong>Eventos:</strong> Salones de eventos, centros de convenciones y locaciones especiales</li>
+                    <li><strong>Universidades:</strong> Campus universitarios y áreas estudiantiles</li>
+                </ul>
+
+                <div class="service-highlight-box">
+                    <h3>📍 Cobertura por Sectores</h3>
+                    <p><strong>Zona Norte:</strong> Villa Verde, Samaria, Kennedy, El Poblado - Tiempo de entrega: 2-4 horas</p>
+                    <p><strong>Zona Sur:</strong> Pinares, El Jardín, Álamos - Tiempo de entrega: 1-3 horas</p>
+                    <p><strong>Zona Centro:</strong> Centro, Circunvalar, Boston - Tiempo de entrega: 1-3 horas</p>
+                    <p><strong>Zona Occidental:</strong> Cuba, San Joaquín, Providencia - Tiempo de entrega: 2-3 horas</p>
+                    <p><strong>Zona Oriental:</strong> Los Alpes, La Julita, Maraya - Tiempo de entrega: 2-4 horas</p>
+                </div>
+
+                <h2>Proceso de Entrega Garantizado</h2>
+
+                <h3>1️⃣ Confirmación del Pedido</h3>
+                <p>
+                    Ni bien realizas tu pedido, recibes al instante una confirmación con todos los datos: productos seleccionados, dirección de destino, horario pactado y número de rastreo. Revisamos contigo cada punto para evitar equivocaciones, incluidas las indicaciones especiales del envío, el mensaje de la tarjeta y los datos de contacto de quien lo recibe.
+                </p>
+
+                <h3>2️⃣ Preparación del Pedido</h3>
+                <p>
+                    Nuestro equipo de floristas arma tu arreglo con flores frescas del día, seleccionadas especialmente para tu pedido. Lo empacamos con materiales protectores que garantizan su llegada en perfectas condiciones, sin que el tráfico ni el clima le pasen factura. Verificamos cada detalle antes de que salga de nuestra floristería.
+                </p>
+
+                <h3>3️⃣ Salida y Seguimiento</h3>
+                <p>
+                    Te notificamos apenas tu pedido sale de la floristería y puedes seguir su ubicación en tiempo real. Te van llegando actualizaciones del estado: "En camino", "A 15 minutos", "Llegando". Si surge cualquier imprevisto o retraso, te lo contamos de inmediato para que siempre sepas por dónde van tus flores.
+                </p>
+
+                <h3>4️⃣ Entrega y Confirmación</h3>
+                <p>
+                    Al momento de entregar, tomamos una fotografía de la persona recibiendo las flores (con su autorización) y te la enviamos como constancia. Si el destinatario no se encuentra, intentamos ubicarlo y te consultamos cómo seguir. Nunca dejamos las flores sin que la entrega quede bien hecha.
+                </p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">⏰</div>
+                        <h4>Puntualidad Garantizada</h4>
+                        <p>Respetamos la hora acordada o te avisamos con anticipación</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📱</div>
+                        <h4>Comunicación Constante</h4>
+                        <p>Te mantenemos al tanto en cada etapa del recorrido de tu pedido</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <h4>Flores Protegidas</h4>
+                        <p>Empaque especial que preserva la frescura y la presentación</p>
+                    </div>
+                </div>
+
+                <h2>Políticas de Entrega Transparentes</h2>
+
+                <h3>Entregas Exitosas</h3>
+                <p>
+                    Damos por cumplida una entrega cuando el destinatario recibe las flores en sus manos o cuando lo hace un adulto autorizado en su nombre. En edificios y conjuntos residenciales podemos dejarlas en portería si nos autorizaste con antelación. Antes de entregar, siempre confirmamos la identidad.
+                </p>
+
+                <h3>Si el Destinatario No Está</h3>
+                <p>
+                    Si el destinatario no se encuentra disponible, intentamos ubicarlo por teléfono. Enseguida te escribimos para definir juntos si reprogramamos el envío, dejamos las flores con un vecino o en portería, o las devolvemos a la floristería. Jamás las dejamos sin supervisión, y así cuidamos su seguridad y frescura.
+                </p>
+
+                <h3>Entregas Corporativas</h3>
+                <p>
+                    En las entregas a oficinas trabajamos de la mano con el personal de seguridad o de recepción. Si el edificio exige autorización previa, te pedimos los datos que hagan falta. Respetamos los protocolos de cada lugar y nos aseguramos de que las flores lleguen al piso y a la oficina correctos.
+                </p>
+
+                <h2>Preguntas Frecuentes</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Puedo cambiar la dirección de entrega después de hacer el pedido?</div>
+                    <div class="faq-answer">
+                        Sí, puedes cambiar la dirección siempre que el pedido no haya salido de nuestra floristería. Una vez despachado, solo podemos modificar la dirección si está en la misma zona de Pereira. Contáctanos inmediatamente si necesitas hacer cambios.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Qué pasa si el destinatario rechaza las flores?</div>
+                    <div class="faq-answer">
+                        En el raro caso de rechazo, te contactamos inmediatamente para coordinar qué hacer. Podemos intentar una segunda entrega en otro horario, enviarlas a una dirección diferente, o retornarlas a la floristería para que las recojas. Tu satisfacción es lo más importante.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Entregan en municipios cercanos a Pereira?</div>
+                    <div class="faq-answer">
+                        Actualmente nuestro servicio regular cubre toda Pereira. Para municipios cercanos como Dosquebradas, La Virginia, Santa Rosa de Cabal o Cartago, contáctanos para evaluar la viabilidad y coordinar condiciones especiales de entrega.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">¿Puedo pedir que no identifiquen quién envía las flores?</div>
+                    <div class="faq-answer">
+                        Absolutamente. Podemos hacer entregas anónimas si lo prefieres. Solo indica en tu pedido que deseas mantener el anonimato y nos aseguraremos de no revelar tu identidad. Perfecto para sorpresas misteriosas o admiradores secretos.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="service-sidebar">
+                <div class="sidebar-card">
+                    <h3>✨ Incluye</h3>
+                    <ul class="sidebar-features-list">
+                        <li>Seguimiento en tiempo real</li>
+                        <li>Confirmación con foto</li>
+                        <li>Coordinación de horario</li>
+                        <li>Empaque protector</li>
+                        <li>Intentos de contacto</li>
+                        <li>Actualizaciones constantes</li>
+                        <li>Cobertura total Pereira</li>
+                        <li>Atención personalizada</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card sidebar-cta-card">
+                    <h3>¿Necesitas Entrega?</h3>
+                    <p>Programa tu envío hoy y ten la certeza de que tus flores llegarán impecables</p>
+                    <a href="https://wa.me/573126865031?text=Necesito%20programar%20una%20entrega%20a%20domicilio" class="btn btn-primary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        Programar por WhatsApp
+                    </a>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>📍 Cobertura</h3>
+                    <p style="color: #666; font-size: 0.95rem; line-height: 1.6;">
+                        Llegamos a toda Pereira con seguimiento en tiempo real y confirmación fotográfica.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Final -->
+<section class="category-cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>¿Listo Para Programar Tu Entrega?</h2>
+            <p>Contáctanos ahora y coordinemos juntos el envío perfecto para tus flores</p>
+            <a href="https://wa.me/573126865031?text=Quiero%20información%20sobre%20entrega%20a%20domicilio" class="btn btn-primary btn-large" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                Programar Mi Entrega
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Service Areas -->
+<div id="service-areas-container"></div>
+
+<!-- Contact Info -->
+<div id="contact-info-container"></div>
+
+<!-- Footer -->
+<div id="footer-container"></div>
+
+<!-- WhatsApp Button -->
+<div id="whatsapp-button-container"></div>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Entrega a Domicilio de Flores",
+    "description": "Servicio rápido y confiable de entrega de flores a domicilio en Pereira. Entregas el mismo día con seguimiento en tiempo real y confirmación con foto.",
+    "provider": {
+        "@type": "Florist",
+        "name": "Floristería Luna Rosa",
+        "telephone": "+573126865031",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Pereira, Risaralda",
+            "addressLocality": "Pereira",
+            "addressRegion": "Risaralda",
+            "addressCountry": "CO"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 4.813194,
+            "longitude": -75.696111
+        }
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Pereira"
+    },
+    "serviceType": "Entrega de Flores a Domicilio",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "318"
+    },
+    "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31"
+    },
+    "additionalProperty": [
+        {
+            "@type": "PropertyValue",
+            "name": "Entrega",
+            "value": "Mismo día disponible"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Seguimiento",
+            "value": "En tiempo real"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Confirmación",
+            "value": "Con foto de entrega"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Cobertura",
+            "value": "Toda Pereira"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "Horarios",
+            "value": "Programables y coordinados"
+        }
+    ]
+}
+</script>
+
+<script src="js/script.js"></sc
+
+    <script src="js/script.js"></script>
+</body>
+</html>
