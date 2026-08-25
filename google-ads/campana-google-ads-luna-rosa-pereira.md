@@ -1,7 +1,7 @@
 # Campaña Google Ads — Floristería Luna Rosa (Pereira)
 
 **Estructura:** 1 campaña de Búsqueda · 6 grupos de anuncios · 1 RSA por grupo (15 títulos + 4 descripciones cada uno).
-**Dominio:** `floristerialunarosa.dondeseria.com` · **WhatsApp:** 304 219 8489 · **Horario:** L–D 8:00 a. m. – 6:00 p. m.
+**Dominio:** `floristerialunarosa.dondeseria.com` · **WhatsApp:** 304 219 8477 · **Horario:** L–D 8:00 a. m. – 6:00 p. m.
 
 > Los títulos, descripciones y palabras clave salen de dos fuentes cruzadas: (1) el informe de términos de búsqueda de la campaña *San Jose – Claudia* (2.967 términos, 20.254 clics, 6.680 conversiones) y (2) el contenido real de cada landing en `landing-pages/`. Cada grupo apunta a la landing que responde exactamente a la intención de sus keywords, que es el criterio de *relevancia* del Nivel de Calidad.
 
@@ -524,7 +524,7 @@ Cada encabezado necesita mínimo 3 valores; carga los 3 encabezados.
 
 **Otras extensiones que debes activar:**
 
-- **Llamada:** 304 219 8489, con programación L–D 8 a. m.–6 p. m.
+- **Llamada:** 304 219 8477, con programación L–D 8 a. m.–6 p. m.
 - **Ubicación:** vincula el perfil de Google Business (sube el CTR en búsquedas "cerca de mí").
 - **Precios:** en el grupo 07 usa el tipo *Servicios* con Corona fúnebre $175.000, Cruz fúnebre, Palma fúnebre — los precios ya están publicados en la landing.
 - **Mensajes/WhatsApp:** si la cuenta lo permite en Colombia, es la extensión con mejor conversión para este negocio.
