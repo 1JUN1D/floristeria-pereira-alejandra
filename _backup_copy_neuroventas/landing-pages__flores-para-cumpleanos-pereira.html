@@ -12,9 +12,10 @@
       gtag('config', 'G-MNY3LGE203');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Floristería cerca de tu ubicación en Pereira abierta 24 horas. Florería cerca de ti con entrega inmediata. Compra flores cerca de ti ahora.">
-    <meta name="keywords" content="floristerias cerca de mi, floristería cerca de mi ubicación, floristería 24 horas, florerias cerca de mi, floreria cerca de mi ubicación, florería cerca de mi, floreria 24 horas cerca de mi, comprar flores cerca de mi">
-    <title>Floristería Cerca de Mi Ubicación 24 Horas | Florería en Pereira - Entrega Inmediata</title>
+    <meta name="description" content="Ramos de flores para cumpleaños de mujer en Pereira. Flores de cumpleaños, arreglos florales para cumpleaños y feliz cumpleaños con flores. Entrega el mismo día.">
+    <meta name="keywords" content="ramos de flores para cumpleaños de mujer, ramos de flores para cumpleaños, flores para cumpleaños, flores de cumpleaños, feliz cumpleaños con flores y globos, feliz cumpleaños con flores, arreglos florales para cumpleaños, arreglo de flores para cumpleaños">
+    <title>Ramos de Flores para Cumpleaños de Mujer | Flores de Cumpleaños en Pereira</title>
+    
     
     <!-- Google Ads Conversion Tracking - Global Site Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17976418670"></script>
@@ -41,25 +42,30 @@
         }
 
         :root {
-            --primary: #8C5FBF;
-            --secondary: #6E4496;
+            --primary: #6E4496;
+            --secondary: #8C5FBF;
             --accent: #C9A86A;
+            --birthday-gold: #C9A86A;
+            --birthday-purple: #6E4496;
+            --ink: #14101B;
+            --ink-2: #221B2E;
+            --gold: #C9A86A;
+            --gold-dark: #A8853F;
+            --cream: #F8F5F0;
+            --lavender: #F5F1FA;
+            --hairline: rgba(22, 18, 28, 0.09);
             --dark: #2B2433;
             --light: #FDFCFB;
             --gray: #6B6375;
-            --ink: #14101B;
-            --ink-2: #221B2E;
-            --cream: #F8F5F0;
-            --lavender: #F5F1FA;
-            --gold-dark: #A8853F;
-            --hairline: rgba(22,18,28,0.09);
+            --whatsapp: #1EBE5D;
+            --whatsapp-dark: #169549;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
             font-weight: 300;
             color: var(--dark);
-            line-height: 1.8;
+            line-height: 1.85;
             background: var(--light);
             overflow-x: hidden;
         }
@@ -74,9 +80,9 @@
            HERO SECTION
            =================================== */
         .hero {
-            background: radial-gradient(900px 420px at 50% -150px, rgba(140,95,191,0.45), transparent 70%), linear-gradient(160deg, #14101B 0%, #221B2E 100%);
+            background: radial-gradient(900px 420px at 50% -150px, rgba(140, 95, 191, 0.45), transparent 70%), linear-gradient(160deg, #14101B 0%, #221B2E 100%);
             color: white;
-            padding: 96px 20px 76px;
+            padding: 90px 20px 70px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -86,8 +92,20 @@
             content: '';
             position: absolute;
             inset: 22px;
-            border: 1px solid rgba(201,168,106,0.22);
+            border: 1px solid rgba(201, 168, 106, 0.22);
             border-radius: 4px;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(201, 168, 106, 0.12), transparent 70%);
+            bottom: -180px;
+            right: -140px;
             pointer-events: none;
         }
 
@@ -107,46 +125,46 @@
             display: block;
             width: 64px;
             height: 1px;
-            margin: 1.3rem auto 0;
+            margin: 1.25rem auto 0;
             background: #C9A86A;
-            box-shadow: 0 0 16px rgba(201,168,106,0.55);
+            box-shadow: 0 0 16px rgba(201, 168, 106, 0.55);
         }
 
         .hero .subtitle {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.35rem;
-            font-weight: 500;
-            letter-spacing: -0.01em;
-            color: rgba(255,255,255,0.92);
-            margin-bottom: 1rem;
+            font-size: 0.72rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.32em;
+            font-weight: 300;
+            color: #C9A86A;
             position: relative;
             z-index: 1;
         }
 
         .hero p {
-            font-size: 1rem;
+            font-size: 1.02rem;
             max-width: 760px;
             margin: 0 auto 2rem;
-            color: rgba(255,255,255,0.72);
+            color: rgba(255, 255, 255, 0.72);
             line-height: 1.95;
             position: relative;
             z-index: 1;
         }
 
-        .location-badge {
+        .birthday-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
-            padding: 0.8rem 1.8rem;
+            padding: 0.7rem 1.8rem;
             border-radius: 999px;
             font-size: 0.7rem;
-            font-weight: 400;
+            font-weight: 300;
             text-transform: uppercase;
-            letter-spacing: 0.32em;
+            letter-spacing: 0.3em;
             color: #C9A86A;
-            border: 1px solid rgba(201,168,106,0.35);
+            border: 1px solid rgba(201, 168, 106, 0.35);
             margin-bottom: 2rem;
             position: relative;
             z-index: 1;
@@ -156,122 +174,136 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem;
+            gap: 0.85rem;
             margin-top: 2rem;
             position: relative;
             z-index: 1;
         }
 
         .keyword-badge {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.06);
             backdrop-filter: blur(10px);
-            padding: 0.6rem 1.3rem;
+            padding: 0.6rem 1.4rem;
             border-radius: 999px;
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             font-weight: 300;
-            letter-spacing: 0.14em;
             text-transform: uppercase;
-            color: rgba(255,255,255,0.75);
-            border: 1px solid rgba(201,168,106,0.28);
+            letter-spacing: 0.16em;
+            color: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(201, 168, 106, 0.32);
         }
 
         .cta-hero {
             display: inline-block;
-            padding: 1.15rem 2.8rem;
+            padding: 1.15rem 3rem;
             background: linear-gradient(135deg, #8C5FBF, #6E4496);
-            color: #fff;
+            color: #FDFCFB;
             border-radius: 999px;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 0.18em;
-            box-shadow: 0 14px 34px rgba(110,68,150,0.4);
+            box-shadow: 0 14px 34px rgba(110, 68, 150, 0.4);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             position: relative;
             z-index: 1;
         }
 
         .cta-hero:hover {
             transform: translateY(-3px);
-            box-shadow: 0 20px 44px rgba(110,68,150,0.5);
+            box-shadow: 0 20px 44px rgba(110, 68, 150, 0.5);
         }
 
         /* ===================================
-           URGENCY BANNER
+           CELEBRATION BANNER
            =================================== */
-        .urgency-banner {
-            background: linear-gradient(90deg, #14101B 0%, #221B2E 100%);
-            color: rgba(255,255,255,0.78);
+        .celebration-banner {
+            background: linear-gradient(160deg, #14101B 0%, #221B2E 100%);
+            color: rgba(255, 255, 255, 0.78);
             text-align: center;
-            padding: 0.85rem 1rem;
+            padding: 0.9rem 1rem;
             font-weight: 300;
-            font-size: 0.78rem;
-            letter-spacing: 0.14em;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            border-bottom: 1px solid rgba(201,168,106,0.25);
+            letter-spacing: 0.24em;
+            border-bottom: 1px solid rgba(201, 168, 106, 0.25);
         }
 
-        .urgency-banner span {
-            color: #C9A86A;
+        .celebration-banner span {
             font-weight: 500;
+            font-size: 0.7rem;
+            color: #C9A86A;
+            letter-spacing: 0.24em;
         }
 
         /* ===================================
-           LOCATION SECTION
+           OCCASIONS SECTION
            =================================== */
-        .location-section {
+        .occasions-section {
             padding: 80px 20px;
             background: var(--light);
         }
 
-        .location-grid {
+        .occasions-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
 
-        .location-card {
+        .occasion-card {
             background: #fff;
-            padding: 2.4rem 2rem;
+            padding: 2.25rem 2rem;
             border-radius: 18px;
             text-align: center;
-            box-shadow: 0 1px 2px rgba(22,18,28,0.04), 0 14px 34px rgba(22,18,28,0.06);
-            transition: transform 0.4s cubic-bezier(.25,.6,.3,1), box-shadow 0.4s ease, border-color 0.4s ease;
             border: 1px solid var(--hairline);
+            box-shadow: 0 1px 2px rgba(22, 18, 28, 0.04), 0 10px 28px rgba(22, 18, 28, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .location-card:hover {
+        .occasion-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 64px;
+            height: 2px;
+            background: rgba(201, 168, 106, 0.55);
+        }
+
+        .occasion-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 24px 50px rgba(110,68,150,0.14);
-            border-color: rgba(201,168,106,0.45);
+            box-shadow: 0 22px 50px rgba(22, 18, 28, 0.09);
         }
 
-        .location-icon {
-            width: 84px;
-            height: 84px;
-            margin: 0 auto 1.2rem;
+        .occasion-icon {
+            font-size: 2.4rem;
+            margin: 0 auto 1.25rem;
+            width: 88px;
+            height: 88px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.1rem;
             background: var(--lavender);
-            border: 1px solid rgba(201,168,106,0.4);
+            border: 1px solid rgba(201, 168, 106, 0.4);
             border-radius: 50%;
         }
 
-        .location-card h3 {
+        .occasion-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.55rem;
-            font-weight: 600;
+            font-size: 1.75rem;
+            font-weight: 500;
             letter-spacing: -0.01em;
             margin-bottom: 0.75rem;
-            color: var(--secondary);
+            color: var(--primary);
         }
 
-        .location-card p {
+        .occasion-card p {
             color: var(--gray);
             font-size: 0.95rem;
             line-height: 1.8;
@@ -293,45 +325,46 @@
         }
 
         .feature-card {
-            text-align: center;
-            padding: 2.2rem 1.8rem;
-            border-radius: 18px;
             background: #fff;
-            transition: transform 0.4s cubic-bezier(.25,.6,.3,1), box-shadow 0.4s ease;
+            padding: 2.25rem 2rem;
+            border-radius: 18px;
+            text-align: center;
             border: 1px solid var(--hairline);
-            box-shadow: 0 1px 2px rgba(22,18,28,0.04), 0 14px 34px rgba(22,18,28,0.06);
+            box-shadow: 0 1px 2px rgba(22, 18, 28, 0.04), 0 10px 28px rgba(22, 18, 28, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .feature-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 24px 50px rgba(110,68,150,0.14);
+            transform: translateY(-5px);
+            box-shadow: 0 18px 44px rgba(22, 18, 28, 0.08);
         }
 
         .feature-icon {
-            width: 72px;
-            height: 72px;
-            margin: 0 auto 1.1rem;
+            font-size: 2.2rem;
+            margin: 0 auto 1.25rem;
+            width: 84px;
+            height: 84px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
             background: var(--lavender);
-            border: 1px solid rgba(201,168,106,0.4);
+            border: 1px solid rgba(201, 168, 106, 0.4);
             border-radius: 50%;
         }
 
         .feature-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            font-weight: 600;
+            font-size: 1.5rem;
+            font-weight: 500;
             letter-spacing: -0.01em;
             margin-bottom: 0.75rem;
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         .feature-card p {
             color: var(--gray);
             font-size: 0.92rem;
+            line-height: 1.8;
         }
 
         /* ===================================
@@ -348,7 +381,7 @@
             font-weight: 500;
             letter-spacing: -0.01em;
             text-align: center;
-            margin-bottom: 1.4rem;
+            margin-bottom: 1rem;
             color: var(--dark);
         }
 
@@ -364,9 +397,8 @@
         .section-subtitle {
             text-align: center;
             color: var(--gray);
-            font-size: 1rem;
-            font-weight: 300;
-            line-height: 1.85;
+            font-size: 1.02rem;
+            line-height: 1.9;
             margin-bottom: 3rem;
             max-width: 700px;
             margin-left: auto;
@@ -384,14 +416,14 @@
             background: #fff;
             border-radius: 999px 999px 22px 22px;
             padding: 12px 12px 0;
-            border: 1px solid rgba(22,18,28,0.07);
-            box-shadow: 0 1px 2px rgba(22,18,28,0.04), 0 14px 34px rgba(22,18,28,0.06);
-            transition: transform .4s cubic-bezier(.25,.6,.3,1), box-shadow .4s ease;
+            border: 1px solid rgba(22, 18, 28, 0.07);
+            box-shadow: 0 1px 2px rgba(22, 18, 28, 0.04), 0 14px 34px rgba(22, 18, 28, 0.06);
+            transition: transform .4s cubic-bezier(.25, .6, .3, 1), box-shadow .4s;
         }
 
         .product-card:hover {
             transform: translateY(-9px);
-            box-shadow: 0 34px 70px rgba(110,68,150,0.18);
+            box-shadow: 0 34px 70px rgba(110, 68, 150, 0.18);
         }
 
         .product-image-container {
@@ -400,22 +432,39 @@
             aspect-ratio: 1 / 1.12;
             overflow: hidden;
             border-radius: 999px 999px 14px 14px;
-            box-shadow: 0 0 0 1px rgba(201,168,106,0.45);
+            box-shadow: 0 0 0 1px rgba(201, 168, 106, 0.45);
         }
 
         .product-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 1.1s cubic-bezier(.25,.6,.3,1);
+            transition: transform 1.1s cubic-bezier(.25, .6, .3, 1);
         }
 
         .product-card:hover .product-image {
             transform: scale(1.06);
         }
 
+        .birthday-badge-product {
+            position: absolute;
+            top: auto;
+            bottom: 1rem;
+            right: 1rem;
+            background: rgba(253, 252, 251, 0.92);
+            color: #A8853F;
+            padding: 0.45rem 1rem;
+            border-radius: 999px;
+            font-size: 0.62rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            border: 1px solid rgba(201, 168, 106, 0.5);
+            box-shadow: 0 6px 16px rgba(22, 18, 28, 0.12);
+        }
+
         .product-info {
-            padding: 1.6rem 1.3rem 1.7rem;
+            padding: 1.5rem 1.25rem 1.6rem;
             text-align: center;
         }
 
@@ -431,38 +480,35 @@
         .product-name {
             font-family: 'Playfair Display', serif;
             font-size: 1.38rem;
+            letter-spacing: -0.01em;
             color: var(--dark);
             margin-bottom: 1rem;
-            font-weight: 600;
-            letter-spacing: -0.01em;
+            font-weight: 500;
         }
 
         .product-name::after {
             content: '·❦·';
             display: block;
-            margin-top: 0.55rem;
-            color: var(--accent);
-            font-size: 0.8rem;
-            font-weight: 400;
-            letter-spacing: 0.4em;
-            text-indent: 0.4em;
+            color: #C9A86A;
+            font-size: .8rem;
+            letter-spacing: .4em;
+            margin-top: .55rem;
+            font-family: 'Playfair Display', serif;
         }
 
         .product-description {
             color: var(--gray);
             line-height: 1.8;
             margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-            font-weight: 300;
+            font-size: 0.92rem;
         }
 
         .product-footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 1.1rem;
-            border-top: 1px solid var(--hairline);
-            text-align: left;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(22, 18, 28, 0.09);
         }
 
         .product-price {
@@ -474,86 +520,174 @@
 
         .price-label {
             font-size: 0.6rem;
-            color: #9b93a6;
             text-transform: uppercase;
-            letter-spacing: 0.24em;
+            letter-spacing: .24em;
+            color: #9b93a6;
             display: block;
             margin-bottom: 0.25rem;
         }
 
         .btn-order {
-            padding: 0.85rem 1.7rem;
+            padding: 0.8rem 1.6rem;
             background: #1EBE5D;
             color: white;
             border: none;
             border-radius: 999px;
             font-weight: 500;
-            font-size: 0.79rem;
+            font-size: .79rem;
             text-transform: uppercase;
-            letter-spacing: 0.12em;
+            letter-spacing: .14em;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             text-decoration: none;
-            box-shadow: 0 10px 24px rgba(30,190,93,0.28);
+            box-shadow: 0 10px 24px rgba(30, 190, 93, 0.28);
         }
 
         .btn-order:hover {
             transform: translateY(-2px);
-            box-shadow: 0 14px 30px rgba(30,190,93,0.35);
+            box-shadow: 0 14px 30px rgba(30, 190, 93, 0.28);
             background: #169549;
         }
 
         .btn-order svg {
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0;
+            width: 16px;
+            height: 16px;
         }
 
         /* ===================================
-           COVERAGE SECTION
+           IDEAS SECTION
            =================================== */
-        .coverage-section {
+        .ideas-section {
             background: var(--lavender);
             padding: 80px 20px;
         }
 
-        .coverage-grid {
+        .ideas-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
             margin-top: 3rem;
         }
 
-        .coverage-item {
+        .idea-card {
             background: #fff;
-            padding: 1.5rem;
+            padding: 2.25rem 2rem;
             border-radius: 18px;
-            text-align: center;
             border: 1px solid var(--hairline);
-            box-shadow: 0 1px 2px rgba(22,18,28,0.04), 0 10px 26px rgba(22,18,28,0.05);
+            box-shadow: 0 1px 2px rgba(22, 18, 28, 0.04), 0 10px 28px rgba(22, 18, 28, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .coverage-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 14px 30px rgba(110,68,150,0.12);
+        .idea-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 44px rgba(22, 18, 28, 0.08);
         }
 
-        .coverage-item::before {
-            content: '✓';
-            display: block;
+        .idea-emoji {
+            font-size: 2rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            background: var(--lavender);
+            border: 1px solid rgba(201, 168, 106, 0.4);
+            border-radius: 50%;
+        }
+
+        .idea-card h3 {
+            font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
-            color: var(--gold-dark);
-            margin-bottom: 0.5rem;
-            font-weight: 400;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin-bottom: 1rem;
+            color: var(--primary);
         }
 
-        .coverage-item p {
+        .idea-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .idea-card li {
+            padding: 0.5rem 0;
+            color: var(--gray);
+            font-size: 0.95rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .idea-card li::before {
+            content: '❀';
+            color: #C9A86A;
+            position: absolute;
+            left: 0;
+        }
+
+        /* ===================================
+           TESTIMONIALS SECTION
+           =================================== */
+        .testimonials {
+            background: var(--light);
+            padding: 80px 20px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--lavender);
+            padding: 2.25rem 2rem;
+            border-radius: 18px;
+            border: 1px solid var(--hairline);
+            box-shadow: 0 1px 2px rgba(22, 18, 28, 0.04), 0 10px 28px rgba(22, 18, 28, 0.05);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 5rem;
+            color: #C9A86A;
+            opacity: 0.35;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .testimonial-stars {
+            color: #C9A86A;
+            font-size: 1.1rem;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            color: var(--gray);
+            line-height: 1.85;
+            margin-bottom: 1rem;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-author {
+            font-weight: 500;
             color: var(--dark);
-            font-weight: 400;
+        }
+
+        .testimonial-occasion {
+            color: #A8853F;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.24em;
         }
 
         /* ===================================
@@ -570,18 +704,19 @@
             border-radius: 50%;
             text-align: center;
             font-size: 40px;
-            box-shadow: 0 4px 16px rgba(30,190,93,0.28);
+            box-shadow: 0 10px 24px rgba(30, 190, 93, 0.28);
             z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
             text-decoration: none;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 24px rgba(30,190,93,0.45);
+            background-color: #169549;
+            box-shadow: 0 14px 30px rgba(30, 190, 93, 0.28);
         }
 
         .whatsapp-float svg {
@@ -637,13 +772,17 @@
         }
 
         .trust-badge-icon {
-            font-size: 3rem;
+            font-size: 1.8rem;
+            background: var(--lavender);
+            border: 1px solid rgba(201, 168, 106, 0.4);
+            border-radius: 999px;
+            padding: 0.85rem 1.5rem;
+            box-shadow: 0 1px 2px rgba(22, 18, 28, 0.04), 0 10px 28px rgba(22, 18, 28, 0.05);
         }
 
         .trust-badge-text {
             font-weight: 500;
-            font-size: 0.85rem;
-            letter-spacing: 0.06em;
+            font-size: 0.92rem;
             color: var(--dark);
         }
 
@@ -704,12 +843,15 @@
                 height: 35px;
             }
 
-            .urgency-banner {
-                font-size: 1rem;
+            .celebration-banner {
+                font-size: 0.62rem;
                 padding: 0.75rem;
             }
 
-            .location-grid {
+            .occasions-grid,
+            .features-grid,
+            .ideas-grid,
+            .testimonials-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -736,25 +878,25 @@
 
 <section class="hero">
         <div class="container">
-            <div class="location-badge">
-                📍 Floristería Cerca de Ti
+            <div class="birthday-badge">
+                🎂 Flores para Cumpleaños
             </div>
             
-            <h1>🌹 Florería Cerca de Mi Ubicación 24 Horas 🌹</h1>
-            <p class="subtitle">La Floristería Más Cercana a Ti con Entrega Inmediata en Pereira</p>
-            <p>¿Estás buscando "floristerias cerca de mi" o "floreria cerca de mi ubicación"? ¡La encontraste! Somos la floristería 24 horas que tienes más a la mano. Compra flores junto a tu ubicación y recíbelas de inmediato. La florería cerca de mi que siempre está disponible para ayudarte a sorprender.</p>
+            <h1>🌹 Ramos de Flores para Cumpleaños de Mujer 🌹</h1>
+            <p class="subtitle">Celebra el Cumpleaños con Flores y Arreglos Florales que Conquistan</p>
+            <p>¿Buscas el ramo de flores para cumpleaños perfecto? Descubre nuestras flores para cumpleaños pensadas para la ocasión. Encuentras desde flores de cumpleaños elegantes hasta feliz cumpleaños con flores y globos. Diseñamos arreglos florales para cumpleaños y arreglo de flores para cumpleaños únicos. Celebra con un feliz cumpleaños con flores que nadie olvidará.</p>
             
             <div class="hero-keywords">
-                <span class="keyword-badge">📍 Floristerias Cerca de Mi</span>
-                <span class="keyword-badge">🗺️ Floristería Cerca de Mi Ubicación</span>
-                <span class="keyword-badge">🕐 Floristería 24 Horas</span>
-                <span class="keyword-badge">🌸 Florería Cerca de Mi</span>
-                <span class="keyword-badge">🚚 Entrega Inmediata</span>
-                <span class="keyword-badge">💐 Comprar Flores Cerca</span>
+                <span class="keyword-badge">💐 Ramos de Flores para Cumpleaños</span>
+                <span class="keyword-badge">👩 Flores para Mujer</span>
+                <span class="keyword-badge">🎂 Flores de Cumpleaños</span>
+                <span class="keyword-badge">🎈 Con Globos</span>
+                <span class="keyword-badge">🌸 Arreglos Florales</span>
+                <span class="keyword-badge">🎉 Feliz Cumpleaños</span>
             </div>
             
-            <a href="https://wa.me/573042198477?text=Hola,%20busco%20una%20floristería%20cerca%20de%20mi%20ubicación" class="cta-hero" onclick="trackConversion()">
-                Encontrar Florería Cerca 📍
+            <a href="https://wa.me/573042198477?text=Hola,%20quiero%20ramos%20de%20flores%20para%20cumpleaños" class="cta-hero" onclick="trackConversion()">
+                Pedir Flores de Cumpleaños 🎂
             </a>
         </div>
     </section>
@@ -763,7 +905,7 @@
     <section class="catalog-intro">
         <div class="container">
             <h2 class="section-title">Nuestro Catalogo Completo</h2>
-            <p class="section-subtitle">Conoce toda nuestra variedad con entrega rapida en Pereira. Localiza por nombre o codigo, filtra por categoria y haz tu pedido por WhatsApp.</p>
+            <p class="section-subtitle">Descubre el regalo de cumpleanos ideal entre nuestros bouquets, cajas y arreglos florales. Consulta por nombre o codigo y filtra por categoria.</p>
         </div>
     </section>
 
@@ -799,103 +941,183 @@
             <div class="products-grid" id="products-grid"></div>
             <div class="empty-state" id="empty-state">
                 <h3>No se encontraron productos</h3>
-                <p>Intenta con otro filtro y encuentra mas opciones disponibles</p>
+                <p>Intenta con otro filtro para ver mas opciones disponibles</p>
             </div>
         </div>
     </section>
 
-<section class="location-section">
+<section class="occasions-section">
         <div class="container">
-            <h2 class="section-title">¿Por Qué Somos la Florería Cerca de Ti Más Confiable?</h2>
-            <p class="section-subtitle">Si tu búsqueda dice "floreria cerca de mi ubicación" o "floristeria 24 horas cerca de mi", esta es la respuesta que necesitas</p>
+            <h2 class="section-title">Flores para Cumpleaños Perfectas para Cada Mujer</h2>
+            <p class="section-subtitle">Todos nuestros ramos de flores para cumpleaños de mujer están diseñados para sorprender y emocionar</p>
             
-            <div class="location-grid">
-                <div class="location-card">
-                    <div class="location-icon">🕐</div>
-                    <h3>Florería 24 Horas</h3>
-                    <p>La floristería 24 horas que tanto buscabas. Sin importar la hora, siempre estamos listos para atenderte. Floreria 24 horas cerca de mi ubicación.</p>
+            <div class="occasions-grid">
+                <div class="occasion-card">
+                    <div class="occasion-icon">👩</div>
+                    <h3>Cumpleaños de Mujer</h3>
+                    <p>Ramos de flores para cumpleaños de mujer llenos de elegancia y distinción. Flores de cumpleaños diseñadas especialmente para ella.</p>
                 </div>
                 
-                <div class="location-card">
-                    <div class="location-icon">📍</div>
-                    <h3>Cerca de Tu Ubicación</h3>
-                    <p>¿Buscaste "floristerias cerca de mi"? En Pereira estamos a pocos minutos de ti. La floristería cerca de mi ubicación que responde más rápido.</p>
+                <div class="occasion-card">
+                    <div class="occasion-icon">💕</div>
+                    <h3>Cumpleaños de Esposa</h3>
+                    <p>Feliz cumpleaños con flores cargadas de romanticismo. Arreglos florales para cumpleaños que expresan un amor verdadero.</p>
                 </div>
                 
-                <div class="location-card">
-                    <div class="location-icon">⚡</div>
-                    <h3>Entrega Inmediata</h3>
-                    <p>Comprar flores cerca de mi nunca fue tan fácil. Domicilios express en toda la ciudad. La florería cerca de mi más veloz.</p>
+                <div class="occasion-card">
+                    <div class="occasion-icon">👩‍👧</div>
+                    <h3>Cumpleaños de Mamá</h3>
+                    <p>Flores para cumpleaños pensadas especialmente para mamá. Ramos de flores para cumpleaños que transmiten gratitud y cariño.</p>
                 </div>
                 
-                <div class="location-card">
-                    <div class="location-icon">🌹</div>
-                    <h3>Flores Frescas</h3>
-                    <p>Como somos la mejor floreria cerca de mi ubicación, te garantizamos flores frescas del día. Florerias cerca de mi con calidad premium.</p>
+                <div class="occasion-card">
+                    <div class="occasion-icon">👭</div>
+                    <h3>Cumpleaños de Amiga</h3>
+                    <p>Flores de cumpleaños rebosantes de color y alegría. Feliz cumpleaños con flores y globos para celebrar la amistad.</p>
+                </div>
+                
+                <div class="occasion-card">
+                    <div class="occasion-icon">💼</div>
+                    <h3>Cumpleaños Corporativo</h3>
+                    <p>Arreglo de flores para cumpleaños con un estilo elegante y profesional. Flores para cumpleaños perfectas para compañeros de oficina.</p>
+                </div>
+                
+                <div class="occasion-card">
+                    <div class="occasion-icon">🎉</div>
+                    <h3>Cumpleaños Sorpresa</h3>
+                    <p>Ramos de flores para cumpleaños sorpresa de enorme impacto. Arreglos florales para cumpleaños que dejan sin palabras.</p>
                 </div>
             </div>
         </div>
     </section>
 <section class="features">
         <div class="container">
-            <h2 class="section-title">Ventajas de Nuestra Florería Cerca de Ti</h2>
+            <h2 class="section-title">¿Por Qué Elegir Nuestras Flores de Cumpleaños?</h2>
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3>Cobertura Total</h3>
-                    <p>Llegamos a toda Pereira. Si buscas "floreria cerca de mi", siempre nos vas a encontrar disponibles.</p>
+                    <div class="feature-icon">🎂</div>
+                    <h3>Especializados en Cumpleaños</h3>
+                    <p>Nos especializamos en ramos de flores para cumpleaños. Cada arreglo de flores para cumpleaños es único e inigualable.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">💯</div>
-                    <h3>Calidad Garantizada</h3>
-                    <p>La floristería cerca de mi ubicación con flores de la mejor calidad. Satisfacción 100% garantizada.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">💳</div>
-                    <h3>Pago Fácil</h3>
-                    <p>Comprar flores cerca de mi es realmente fácil. Aceptamos todos los medios de pago.</p>
+                    <div class="feature-icon">🎈</div>
+                    <h3>Con Globos Disponibles</h3>
+                    <p>Feliz cumpleaños con flores y globos. Combinaciones perfectas para celebraciones memorables.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">🎁</div>
-                    <h3>Tarjeta Gratis</h3>
-                    <p>Como somos tu florería cerca de mi preferida, cada pedido incluye una tarjeta personalizada.</p>
+                    <h3>Tarjeta Personalizada</h3>
+                    <p>Cada pedido de flores para cumpleaños incluye tarjeta con tu mensaje de feliz cumpleaños con flores.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Entrega el Mismo Día</h3>
+                    <p>Flores de cumpleaños con entrega rápida. Ramos de flores para cumpleaños listos en pocas horas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌹</div>
+                    <h3>Flores Frescas</h3>
+                    <p>Arreglos florales para cumpleaños elaborados con las flores más frescas del día. Calidad garantizada.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💯</div>
+                    <h3>Satisfacción Total</h3>
+                    <p>Miles de ramos de flores para cumpleaños entregados con clientes 100% satisfechos.</p>
                 </div>
             </div>
         </div>
     </section>
-<section class="coverage-section">
+<section class="ideas-section">
         <div class="container">
-            <h2 class="section-title">Zonas de Cobertura - Florería Cerca de Ti</h2>
-            <p class="section-subtitle">Cuando escribes "floreria cerca de mi ubicación", estos son los sectores a los que llegamos</p>
+            <h2 class="section-title">Ideas para Ramos de Flores para Cumpleaños</h2>
+            <p class="section-subtitle">Inspírate con nuestras propuestas de flores para cumpleaños</p>
             
-            <div class="coverage-grid">
-                <div class="coverage-item"><p>Zona Norte de Pereira</p></div>
-                <div class="coverage-item"><p>Zona Centro de Pereira</p></div>
-                <div class="coverage-item"><p>Zona Sur de Pereira</p></div>
-                <div class="coverage-item"><p>Pinares</p></div>
-                <div class="coverage-item"><p>Los Alpes</p></div>
-                <div class="coverage-item"><p>Circunvalar</p></div>
-                <div class="coverage-item"><p>Álamos</p></div>
-                <div class="coverage-item"><p>Ciudad Jardín</p></div>
-                <div class="coverage-item"><p>Villa Verde</p></div>
-                <div class="coverage-item"><p>Corales</p></div>
-                <div class="coverage-item"><p>Boston</p></div>
-                <div class="coverage-item"><p>Los Rosales</p></div>
-                <div class="coverage-item"><p>La Julita</p></div>
-                <div class="coverage-item"><p>El Jardín</p></div>
-                <div class="coverage-item"><p>Belmonte</p></div>
-                <div class="coverage-item"><p>San Joaquín</p></div>
+            <div class="ideas-grid">
+                <div class="idea-card">
+                    <span class="idea-emoji">🌹</span>
+                    <h3>Rosas Clásicas</h3>
+                    <ul>
+                        <li>Rosas rojas para cumpleaños romántico</li>
+                        <li>Rosas rosadas para cumpleaños tierno</li>
+                        <li>Rosas amarillas para cumpleaños alegre</li>
+                        <li>Rosas blancas para cumpleaños elegante</li>
+                    </ul>
+                </div>
+                
+                <div class="idea-card">
+                    <span class="idea-emoji">🌻</span>
+                    <h3>Girasoles Radiantes</h3>
+                    <ul>
+                        <li>Girasoles para cumpleaños alegre</li>
+                        <li>Combinación con rosas para cumpleaños</li>
+                        <li>Arreglos luminosos de cumpleaños</li>
+                        <li>Perfectos para personalidades solares</li>
+                    </ul>
+                </div>
+                
+                <div class="idea-card">
+                    <span class="idea-emoji">🎈</span>
+                    <h3>Con Globos</h3>
+                    <ul>
+                        <li>Feliz cumpleaños con flores y globos</li>
+                        <li>Globos personalizados con edad</li>
+                        <li>Combinaciones coloridas festivas</li>
+                        <li>Pack completo de celebración</li>
+                    </ul>
+                </div>
+                
+                <div class="idea-card">
+                    <span class="idea-emoji">🎁</span>
+                    <h3>Con Obsequios</h3>
+                    <ul>
+                        <li>Flores + Chocolates para cumpleaños</li>
+                        <li>Flores + Peluche de cumpleaños</li>
+                        <li>Flores + Vino para celebrar</li>
+                        <li>Cajas sorpresa de cumpleaños</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonios - Flores para Cumpleaños</h2>
+            <p class="section-subtitle">Comentarios de quienes ya encargaron nuestros ramos de flores para cumpleaños</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"¡Los ramos de flores para cumpleaños de mujer son preciosos! Mi esposa se emocionó hasta las lágrimas. El regalo de flores para cumpleaños perfecto."</p>
+                    <p class="testimonial-author">Juan Pérez</p>
+                    <p class="testimonial-occasion">Cumpleaños de Esposa</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Pedí flores de cumpleaños para mi mamá y quedó encantada. Los arreglos florales para cumpleaños son hermosos y llegaron impecables."</p>
+                    <p class="testimonial-author">Andrea López</p>
+                    <p class="testimonial-occasion">Cumpleaños de Mamá</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"El arreglo de flores para cumpleaños con globos quedó espectacular. Un feliz cumpleaños con flores y globos que superó todo lo que había imaginado."</p>
+                    <p class="testimonial-author">Sofía Ramírez</p>
+                    <p class="testimonial-occasion">Cumpleaños Sorpresa</p>
+                </div>
             </div>
         </div>
     </section>
 <section class="trust-section">
         <div class="container">
-            <h2 class="section-title">La Florería Cerca de Mi Ubicación Más Confiable</h2>
-            <p class="section-subtitle">Miles de clientes que buscaron "floristerias cerca de mi" hoy nos prefieren</p>
+            <h2 class="section-title">Expertos en Flores para Cumpleaños</h2>
+            <p class="section-subtitle">Tu mejor opción en ramos de flores para cumpleaños en Pereira</p>
             
             <div class="trust-badges">
                 <div class="trust-badge">
@@ -904,13 +1126,13 @@
                 </div>
                 
                 <div class="trust-badge">
-                    <div class="trust-badge-icon">🚚</div>
-                    <div class="trust-badge-text">+5000 Entregas Exitosas</div>
+                    <div class="trust-badge-icon">🎂</div>
+                    <div class="trust-badge-text">+3000 Cumpleaños Celebrados</div>
                 </div>
                 
                 <div class="trust-badge">
-                    <div class="trust-badge-icon">🕐</div>
-                    <div class="trust-badge-text">Disponible 24/7</div>
+                    <div class="trust-badge-icon">🎈</div>
+                    <div class="trust-badge-text">Globos Disponibles</div>
                 </div>
                 
                 <div class="trust-badge">
@@ -922,7 +1144,7 @@
     </section>
 
     <!-- Boton flotante WhatsApp -->
-    <a href="https://wa.me/573042198477?text=Hola,%20busco%20una%20floristería%20cerca%20de%20mi%20ubicación" 
+    <a href="https://wa.me/573042198477?text=Hola,%20quiero%20ramos%20de%20flores%20para%20cumpleaños" 
        class="whatsapp-float" 
        target="_blank"
        onclick="trackConversion()">
@@ -963,322 +1185,322 @@
         const products = [
     {
         id: 1,
-        name: "Fuerza y Ternura – Girasoles y Rosas Rojas",
+        name: "Girasoles y Rosas Rojas Vino",
         price: 87500,
         image: "/assets/1.webp",
-        description: "Llega y no sabe si reírse o abrazarte: el amarillo la levanta y el rojo le dice todo lo demás. Tres girasoles bien abiertos, rosas rojas y ramas de eucalipto en papel vino y mostaza, por menos de $90.000. Para sorprender un martes cualquiera y quedar como nadie.",
+        description: "Tres girasoles bien abiertos rodeados de rosas rojas y ramas de eucalipto, envueltos en papel vino y mostaza. Un ramo cálido y luminoso que combina fuerza y romance en la misma mano.",
         categories: ["girasoles", "rosas-rojas", "precio-bajo"]
     },
     {
         id: 2,
-        name: "Un Año Más de Nosotros – Girasoles y Rosas con Corazones",
+        name: "Girasoles y Rosas con Corazones",
         price: 100000,
         image: "/assets/2.webp",
-        description: "Es el ramo que dice «seguimos aquí» sin necesidad de discurso. Girasoles y rosas rojas con statice lila y blanco, en envoltura blanca estampada con corazones. Para celebrar un aniversario y que se acuerde de ese día cada vez que lo mire.",
+        description: "Girasoles y rosas rojas acompañados de statice lila y blanco, presentados en envoltura blanca estampada con corazones. Alegre y romántico a la vez, ideal para un aniversario.",
         categories: ["girasoles", "rosas-rojas", "mix", "precio-medio"]
     },
     {
         id: 3,
-        name: "La Foto de Todo el Salón – Torta Floral de Rosas Rosadas",
+        name: "Torta Floral de Rosas Rosadas",
         price: 937500,
         image: "/assets/3.webp",
-        description: "Nadie entra a esa fiesta sin sacarle una foto: tres pisos de flores donde iba el pastel. Cientos de rosas fucsia y rosadas sobre base cilíndrica blanca rematada con lazo de satín, la pieza más grande del catálogo. Para unos quince o un cumpleaños que quieres que se hablen todo el año; se aparta con anticipación.",
+        description: "Espectacular torta de tres pisos elaborada con cientos de rosas fucsia y rosadas sobre base cilíndrica blanca, rematada con lazo de satín. La pieza más impactante de nuestro catálogo para un cumpleaños inolvidable.",
         categories: ["rosas-rosadas", "cajas", "precio-alto"]
     },
     {
         id: 4,
-        name: "Noche Que No se Olvida – Corazón de Rosas, Vino y Chocolates",
+        name: "Corazón de Rosas con Vino y Chocolates",
         price: 262500,
         image: "/assets/4.webp",
-        description: "Abre la caja, ve el corazón rojo, y después descubre que además hay vino y chocolates para los dos. Caja corazón negra colmada de rosas rojas con cristales, botella de vino tinto y estuche de bombones: el regalo y el plan en una sola entrega. Para un aniversario o una reconciliación que quieres cerrar bien.",
+        description: "Caja corazón en negro colmada de rosas rojas con cristales, acompañada de una botella de vino tinto y un estuche de chocolates. Un regalo completo para decir «te amo» en grande.",
         categories: ["rosas-rojas", "cajas", "chocolates", "precio-alto"]
     },
     {
         id: 5,
-        name: "Se Le Aguan los Ojos – Ramo Pastel XL con Mariposas",
+        name: "Ramo Pastel con Mariposas",
         price: 200000,
         image: "/assets/5.webp",
-        description: "Es de esos ramos que dejan a la persona callada un segundo antes de reaccionar. Rosas en tonos rosa, lila y marfil enmarcadas en gypsophila teñida y mariposas decorativas, en formato grande. Para regalar a una mamá, una hija o una amiga en su día y ver la cara de sorpresa.",
+        description: "Abundante ramo de rosas en tonos rosa, lila y marfil, enmarcado en gypsophila teñida y mariposas decorativas. Delicadeza y ensueño en una sola composición de gran formato.",
         categories: ["rosas-rosadas", "mix", "precio-medio"]
     },
     {
         id: 6,
-        name: "Le Queda un Recuerdo, No Solo un Ramo – Cofre de Girasoles con Rosa Preservada",
+        name: "Cofre de Girasoles con Rosa en Cúpula",
         price: 262500,
         image: "/assets/6.webp",
-        description: "Los girasoles le alegran la semana; la rosa bajo la cúpula se queda en su mesa de noche durante años. Base circular negra con corona de girasoles, bombones Ferrero y una rosa amarilla preservada en cristal. Para un cumpleaños o aniversario en que quieres dejar huella, no solo un detalle.",
+        description: "Base circular negra con corona de girasoles, bombones Ferrero y una rosa amarilla preservada bajo cúpula de cristal. Elegancia luminosa que se conserva mucho después del día especial.",
         categories: ["girasoles", "cajas", "chocolates", "precio-alto"]
     },
     {
         id: 7,
-        name: "Se Ve Desde la Puerta – Arreglo Piramidal de Girasoles y Rosas",
+        name: "Arreglo Piramidal de Girasoles y Rosas",
         price: 262500,
         image: "/assets/7.webp",
-        description: "Es la clase de arreglo que obliga a preguntar quién lo mandó. Composición piramidal en degradado con girasoles y decenas de rosas rojas sobre base de madera, pensada para lucirse en una mesa o una recepción. Para homenajes, aniversarios y celebraciones donde quieres que tu nombre se note.",
+        description: "Imponente composición en degradado que une girasoles y decenas de rosas rojas sobre base de madera. Perfecto para homenajes, aniversarios y celebraciones que merecen protagonismo.",
         categories: ["girasoles", "rosas-rojas", "precio-alto"]
     },
     {
         id: 8,
-        name: "Rosas Que Además se Comen – Caja de Rosas y Fresas con Chocolate",
+        name: "Caja de Rosas con Fresas Achocolatadas",
         price: 125000,
         image: "/assets/8.webp",
-        description: "Primero se emociona con las rosas y después se sienta a comerse las fresas: la sorpresa dura el doble. Rosas rojas en caja negra con fresas bañadas en chocolate y mariposas doradas, en $125.000. Para sorprender en un cumpleaños o cerrar bien una primera cita.",
+        description: "Rosas rojas en caja negra acompañadas de fresas bañadas en chocolate y mariposas doradas. Dulzura y elegancia para una sorpresa que se disfruta con todos los sentidos.",
         categories: ["rosas-rojas", "cajas", "chocolates", "precio-medio"]
     },
     {
         id: 9,
-        name: "Que Quede Claro lo Que Sientes – Ramo Imperial de Rosas y Girasoles",
+        name: "Ramo Imperial de Rosas y Girasoles",
         price: 225000,
         image: "/assets/9.webp",
-        description: "Hay mensajes que no se dicen con un ramo pequeño. Ramo generoso de rosas rojas coronado con girasoles, en papel negro con lunares dorados y tarjeta de regalo incluida. Para declarar, pedir perdón o celebrar algo que de verdad importa.",
+        description: "Generoso ramo de rosas rojas coronado por girasoles, envuelto en papel negro con lunares dorados y tarjeta de regalo. Una declaración de amor con presencia y estilo.",
         categories: ["girasoles", "rosas-rojas", "precio-alto"]
     },
     {
         id: 10,
-        name: "Una Sola Vez en la Vida – Cofre de 100 Rosas Rojas",
+        name: "Cofre Gran Lujo de 100 Rosas",
         price: 1000000,
         image: "/assets/10.webp",
-        description: "Cien rosas no se regalan dos veces: es el gesto que marca un antes y un después. Caja negra de gran formato repleta de rosas rojas de tallo largo, con globos metalizados de corazón; nuestra pieza más imponente. Para una propuesta o un aniversario grande; se aparta con anticipación.",
+        description: "Caja negra de gran formato repleta de rosas rojas, acompañada de globos metalizados en forma de corazón. Nuestro gesto más imponente, reservado para una ocasión irrepetible.",
         categories: ["rosas-rojas", "cajas", "precio-alto"]
     },
     {
         id: 11,
-        name: "Sorpresa Completa, Sin Que Falte Nada – Girasoles, Rosas y Globo de Corazón",
+        name: "Girasoles y Rosas con Globo de Corazón",
         price: 200000,
         image: "/assets/11.webp",
-        description: "No tienes que salir a comprar nada más: llegan el ramo, el globo y el estuche de regalo, todo junto. Girasoles y rosas rojas en envoltura negra tipografiada, globo metalizado de corazón y caja de obsequio. Para enviar a domicilio y que la sorpresa quede armada desde la puerta.",
+        description: "Ramo de girasoles y rosas rojas en envoltura negra tipografiada, con globo metalizado de corazón y estuche de regalo. Una sorpresa completa, lista para entregar.",
         categories: ["girasoles", "rosas-rojas", "precio-medio"]
     },
     {
         id: 12,
-        name: "Sin Excusa Para No Enviarlo – Ramo Kraft de Girasoles y Rosas",
+        name: "Ramo Kraft de Girasoles y Rosas",
         price: 100000,
         image: "/assets/12.webp",
-        description: "El ramo que se manda un miércoles solo porque te acordaste de ella. Girasoles y rosas rojas con follaje fresco en envoltura kraft, lazo coral y tarjeta incluida, en $100.000. Para alegrarle el día sin esperar una fecha especial.",
+        description: "Girasoles y rosas rojas con follaje fresco en envoltura kraft y lazo coral, con tarjeta incluida. Un clásico cálido y espontáneo que funciona cualquier día del año.",
         categories: ["girasoles", "rosas-rojas", "precio-medio"]
     },
     {
         id: 13,
-        name: "El Cumpleaños Entero en una Caja – Flores, Globo y Bombones",
+        name: "Caja de Cumpleaños en Tonos Rosa",
         price: 137500,
         image: "/assets/13.webp",
-        description: "Llega la caja y adentro está todo: las flores, el globo, la tarjeta y los chocolates. Caja blanca con hortensias, rosas y claveles en degradado rosa, globo festivo y bombones incluidos. Para celebrar un cumpleaños a distancia y que no le falte nada.",
+        description: "Composición en caja blanca con hortensias, rosas y claveles en degradado rosa, globo, tarjeta festiva y bombones. Un cumpleaños entero servido en flores.",
         categories: ["rosas-rosadas", "cajas", "mix", "precio-medio"]
     },
     {
         id: 14,
-        name: "Se Queda Abrazada al Peluche – Girasoles XL con Panda «Te Amo»",
+        name: "Ramo de Girasoles con Panda «Te Amo»",
         price: 312500,
         image: "/assets/14.webp",
-        description: "El ramo la alegra, pero el panda es el que se queda con ella esa noche. Corona de girasoles en envoltura negra con peluche panda que sostiene un corazón «Te Amo» y estuche de regalo, en formato XL. Para sorprender en un aniversario o pedir algo importante con ternura.",
+        description: "Corona de girasoles en envoltura negra con un peluche panda que sostiene un corazón «Te Amo» y estuche de regalo. Ternura y luz en formato XL.",
         categories: ["girasoles", "precio-alto"]
     },
     {
         id: 15,
-        name: "Nadie Sabe Qué Abrir Primero – Caja de Rosas y Ferrero Rocher",
+        name: "Caja «Just For You» de Rosas y Ferrero",
         price: 162500,
         image: "/assets/15.webp",
-        description: "Media luna de rosas rojas de un lado y bombones dorados del otro; la duda dura poco. Caja blanca con lazo rojo, rosas frescas, Ferrero Rocher y tarjeta con tu mensaje, en $162.500. Para un detalle elegante que además se disfruta con un café.",
+        description: "Rosas rojas y bombones Ferrero Rocher dispuestos en media luna dentro de una caja blanca con lazo rojo y tarjeta. Un detalle elegante y goloso a la vez.",
         categories: ["rosas-rojas", "cajas", "chocolates", "precio-medio"]
     },
     {
         id: 16,
-        name: "Color Que se Roba la Mesa – Cúpula de Rosas Multicolor",
+        name: "Cúpula Multicolor de Rosas",
         price: 562500,
         image: "/assets/16.webp",
-        description: "Es la pieza que cambia el ánimo de un salón completo apenas la ponen sobre la mesa. Domo generoso de rosas en fucsia, lila, coral y marfil sobre base negra, con tarjeta personalizada. Para celebrar un cumpleaños grande o un logro que merece verse en grande.",
+        description: "Domo generoso de rosas en fucsia, lila, coral y marfil sobre base negra, con tarjeta personalizada. Color y abundancia para una celebración a lo grande.",
         categories: ["rosas-rosadas", "mix", "cajas", "precio-alto"]
     },
     {
         id: 17,
-        name: "Con su Nombre en Letras Doradas – Ramo de Rosas Personalizado",
+        name: "Ramo de Rosas con Banda Personalizada",
         price: 187500,
         image: "/assets/17.webp",
-        description: "Ver su nombre escrito en el ramo cambia por completo lo que se siente al recibirlo. Ramo abundante de rosas rojas en envoltura negra con banda de satín personalizada en letras doradas. Para un cumpleaños con mensaje propio: nos envías el texto por WhatsApp al hacer el pedido.",
+        description: "Ramo abundante de rosas rojas en envoltura negra con banda de satín personalizada en letras doradas. Ideal para cumpleaños con mensaje propio.",
         categories: ["rosas-rojas", "precio-medio"]
     },
     {
         id: 18,
-        name: "Cien Razones Para Quedarse – Canasta de 100 Rosas Rojas",
+        name: "Canasta de 100 Rosas Rojas",
         price: 562500,
         image: "/assets/18.webp",
-        description: "Cien rosas rojas de tallo largo desbordando una canasta: no hace falta explicar nada más. Mimbre natural, follaje fresco y lazo rojo, montada para durar toda la celebración. Para aniversarios, propuestas y momentos que se cuentan durante años.",
+        description: "Canasta de mimbre desbordada de rosas rojas de tallo largo con follaje natural y lazo rojo. Un clásico monumental para momentos que se recuerdan toda la vida.",
         categories: ["rosas-rojas", "precio-alto"]
     },
     {
         id: 19,
-        name: "La Sorpresa Que Nadie Olvida – Cofre de Rosas, Oso Grande y Globos",
+        name: "Rosas, Oso y Globos de Corazón",
         price: 512500,
         image: "/assets/19.webp",
-        description: "El oso se ve antes que el cofre y la reacción se nota desde la esquina. Cofre negro de rosas rojas, peluche de gran tamaño y globos metalizados de corazón, entregado completo. Para un aniversario, una pedida o un cumpleaños que quieres volver inolvidable.",
+        description: "Cofre negro de rosas rojas acompañado de un oso de peluche de gran tamaño y globos metalizados en forma de corazón. La sorpresa que nadie olvida.",
         categories: ["rosas-rojas", "cajas", "precio-alto"]
     },
     {
         id: 20,
-        name: "La Pregunta ya Va Escrita – Ramo con Globo «¿Quieres Ser Mi Novia?»",
+        name: "Ramo «¿Quieres Ser Mi Novia?»",
         price: 162500,
         image: "/assets/20.webp",
-        description: "Solo tienes que entregarlo: el globo hace la pregunta por ti y las rosas se encargan del resto. Rosas rojas en envoltura roja con bombones Ferrero, mariposas doradas y globo con el mensaje impreso. Para declararte sin tener que ensayar el discurso.",
+        description: "Rosas rojas en envoltura roja con bombones Ferrero, mariposas doradas y globo con la pregunta más esperada. Pensado para declararse sin dudarlo.",
         categories: ["rosas-rojas", "chocolates", "precio-medio"]
     },
     {
         id: 21,
-        name: "Levanta el Ánimo de Cualquiera – Ramo de Girasoles con Solidago",
+        name: "Ramo de Girasoles con Solidago",
         price: 162500,
         image: "/assets/21.webp",
-        description: "Amarillo puro: el ramo que se manda cuando alguien necesita un buen día más que un regalo. Girasoles frescos con solidago amarillo y follaje verde en envoltura negra tipografiada. Para animar a una amiga, celebrar un logro o agradecer algo de verdad.",
+        description: "Girasoles frescos combinados con solidago amarillo y follaje verde, en envoltura negra tipografiada. Energía pura para alegrar cualquier espacio.",
         categories: ["girasoles", "precio-medio"]
     },
     {
         id: 22,
-        name: "El Espejo se Queda Para Siempre – Aro de Rosas con Grabado Personalizado",
+        name: "Aro de Rosas con Espejo Personalizado",
         price: 187500,
         image: "/assets/22.webp",
-        description: "Las flores duran su tiempo; el espejo grabado con tu mensaje se queda colgado en su cuarto. Corona de rosas rosadas y marfil con gypsophila alrededor de un espejo grabado a la medida. Para un cumpleaños o aniversario en que quieres regalar un recuerdo, no un consumible.",
+        description: "Corona de rosas rosadas y marfil con gypsophila alrededor de un espejo grabado con tu mensaje. Un regalo original que queda como recuerdo mucho después.",
         categories: ["rosas-rosadas", "mix", "precio-medio"]
     },
     {
         id: 23,
-        name: "Frescura Que se Siente al Entrar – Girasoles con Astromelias Blancas",
+        name: "Girasoles con Astromelias Blancas",
         price: 112500,
         image: "/assets/23.webp",
-        description: "Es el ramo que ilumina una habitación de hospital o una oficina gris en dos segundos. Girasoles abiertos con astromelias blancas y gypsophila en envoltura rosa con corazones, en $112.500. Para acompañar una recuperación, visitar a alguien o dar los buenos días de la mejor forma.",
+        description: "Girasoles abiertos con astromelias blancas y gypsophila en envoltura rosa con corazones. Frescura luminosa con un toque tierno.",
         categories: ["girasoles", "mix", "precio-medio"]
     },
     {
         id: 24,
-        name: "Tratada Como Reina – Cofre Corona de Rosas y Ferrero",
+        name: "Cofre Corona de Rosas y Ferrero",
         price: 537500,
         image: "/assets/24.webp",
-        description: "La corona no es decoración: es el mensaje. Caja negra colmada de rosas rojas con un corazón de bombones Ferrero al centro y corona decorativa, en gran formato. Para un cumpleaños o aniversario donde quieres que se sienta la más importante del día.",
+        description: "Caja negra colmada de rosas rojas con un corazón de bombones Ferrero en el centro y corona decorativa. Para tratar como reina a quien lo recibe.",
         categories: ["rosas-rojas", "cajas", "chocolates", "precio-alto"]
     },
     {
         id: 25,
-        name: "Nunca Falla – Ramo Clásico de Rosas Rojas",
+        name: "Ramo Clásico de Rosas en Negro",
         price: 112500,
         image: "/assets/25.webp",
-        description: "Hay un ramo que funciona con cualquier persona y en cualquier fecha, y es este. Rosas rojas de tallo largo en papel negro y tul, rematadas con lazo rojo, por $112.500. Para regalar sin arriesgar y quedar bien siempre.",
+        description: "Rosas rojas de tallo largo envueltas en papel negro y tul, rematadas con lazo rojo. Sobriedad y pasión en el ramo más atemporal.",
         categories: ["rosas-rojas", "precio-medio"]
     },
     {
         id: 26,
-        name: "Nadie Más le Va a Llevar Esto – Caja de 12 Rosas Azules",
+        name: "Caja de Rosas Azules",
         price: 100000,
         image: "/assets/26.webp",
-        description: "Rosas rojas recibe de todo el mundo; azules, de una sola persona. Doce rosas azules de tono intenso en caja negra con lazo de satín a juego, en $100.000. Para diferenciarte cuando sabes que no eres el único con la misma idea.",
+        description: "Doce rosas azules de tono intenso en caja negra con lazo de satín a juego. Una elección diferente para quien no quiere recibir lo de siempre.",
         categories: ["cajas", "precio-medio"]
     },
     {
         id: 27,
-        name: "Empieza Algo Bueno – Caja de Rosas Amarillas y Ferrero",
+        name: "Caja de Rosas Amarillas y Ferrero",
         price: 125000,
         image: "/assets/27.webp",
-        description: "El amarillo se regala cuando algo comienza o algo se supera. Rosas amarillas con gypsophila y bombones Ferrero en caja cuadrada negra con lazo dorado, tarjeta y guía de cuidados. Para celebrar un nuevo trabajo, una amistad de años o un cierre de ciclo.",
+        description: "Rosas amarillas con gypsophila y bombones Ferrero en caja cuadrada negra con lazo dorado, tarjeta y guía de cuidados. Alegría y buenos deseos en un mismo detalle.",
         categories: ["cajas", "chocolates", "precio-medio"]
     },
     {
         id: 28,
-        name: "Todo lo Que Pidió, en un Solo Envío – Rosas, Oso y Chocolates",
+        name: "Combo Rosas, Oso y Chocolates",
         price: 425000,
         image: "/assets/28.webp",
-        description: "No es un regalo: son tres, y llegan al mismo tiempo. Ramo de rosas rojas con cristales, oso de peluche con estuche Ferrero Rocher y globos metalizados de estrella. Para aniversarios que se celebran por todo lo alto sin correr por la ciudad comprando.",
+        description: "Ramo de rosas rojas con cristales, oso de peluche con estuche Ferrero Rocher y globos metalizados en forma de estrella. Un combo pensado para aniversarios que se celebran por todo lo alto.",
         categories: ["rosas-rojas", "chocolates", "precio-alto"]
     },
     {
         id: 29,
-        name: "Le Van a Preguntar Dónde lo Compró – Bolso Floral con Fresas y Globo",
+        name: "Bolso Floral con Fresas y Globo",
         price: 162500,
         image: "/assets/29.webp",
-        description: "Es un bolso, pero por dentro es un jardín: llama la atención antes de que se sepa que son flores. Base tipo bolso beige acolchado con gerberas, rosas y claveles, fresas bañadas en chocolate y globo estrella. Para un cumpleaños donde quieres salirte de lo típico.",
+        description: "Base tipo bolso en beige acolchado repleta de gerberas, rosas y claveles, con fresas bañadas en chocolate y globo estrella. Colorido, femenino y muy original.",
         categories: ["mix", "rosas-rosadas", "precio-medio"]
     },
     {
         id: 30,
-        name: "Para Celebrar lo Que Logró – Ramo de Rosas Amarillas",
+        name: "Ramo de Rosas Amarillas",
         price: 137500,
         image: "/assets/30.webp",
-        description: "El ramo de los buenos comienzos: grados, ascensos, mudanzas, amistades de años. Rosas amarillas con statice lila y gypsophila en envoltura crema, con tarjeta incluida. Para felicitar a alguien y que sepa que estabas pendiente.",
+        description: "Rosas amarillas con statice lila y gypsophila en envoltura crema y tarjeta incluida. Ideal para celebrar amistades, logros y nuevos comienzos.",
         categories: ["mix", "precio-medio"]
     },
     {
         id: 31,
-        name: "Dulce Sin Ser Cursi – Arreglo Espiral de Rosas con Peluche",
+        name: "Arreglo Espiral con Peluche",
         price: 175000,
         image: "/assets/31.webp",
-        description: "Rosas en espiral, girasoles y un peluche abrazando un corazón: la mezcla justa entre lindo y bien hecho. Composición en base con rosas amarillas y rosadas, girasoles frescos y peluche incluido. Para cumpleaños y aniversarios donde el detalle importa tanto como la flor.",
+        description: "Rosas amarillas y rosadas dispuestas en espiral junto a girasoles y un tierno peluche con corazón. Una composición dulce para cumpleaños y aniversarios.",
         categories: ["girasoles", "rosas-rosadas", "mix", "precio-medio"]
     },
     {
         id: 32,
-        name: "Un Regalo con Fe – Caja de Rosas con Virgen y Chocolates",
+        name: "Caja de Rosas con Virgen y Cajón de Chocolates",
         price: 175000,
         image: "/assets/32.webp",
-        description: "Para quien reza todos los días, este arreglo significa mucho más que unas flores. Rosas rojas en caja blanca con figura de la Virgen y cajón inferior con bombones Ferrero. Para el Día de la Madre, un cumpleaños o una fecha de fe que quieres acompañar.",
+        description: "Rosas rojas en caja blanca con figura de la Virgen y cajón inferior con bombones Ferrero. Un obsequio con significado para fechas muy especiales.",
         categories: ["rosas-rojas", "cajas", "chocolates", "precio-medio"]
     },
     {
         id: 33,
-        name: "Alcanza y Alegra Igual – Ramo Lila con Girasol",
+        name: "Ramo Lila con Girasol",
         price: 62500,
         image: "/assets/33.webp",
-        description: "Cuesta poco y provoca lo mismo que uno de $200.000: una sonrisa inmediata. Margaritas lila, rosas rosadas y un girasol al centro en envoltura rosa y kraft, desde $62.500. Para mandar un «pensé en ti» sin pensarlo dos veces.",
+        description: "Margaritas lila, rosas rosadas y un girasol al centro en envoltura rosa y kraft. Un detalle fresco y accesible que siempre saca una sonrisa.",
         categories: ["mix", "girasoles", "precio-bajo"]
     },
     {
         id: 34,
-        name: "Pensé en Ti – Ramo de Rosas Rosadas y Astromelias",
+        name: "Ramo de Rosas Rosadas y Astromelias",
         price: 62500,
         image: "/assets/34.webp",
-        description: "El detalle suave que se manda sin motivo y termina siendo el mejor momento del día de alguien. Rosas rosadas con astromelias blancas en papel rosa y terracota con cinta de satín, desde $62.500. Para agradecer, pedir perdón o simplemente aparecer.",
+        description: "Rosas rosadas con astromelias blancas envueltas en papel rosa y terracota con cinta de satín. Suave, romántico y perfecto para un «pensé en ti».",
         categories: ["rosas-rosadas", "precio-bajo"]
     },
     {
         id: 35,
-        name: "Decir lo Importante Bien Dicho – Caja Cuadrada de Rosas Rojas",
+        name: "Caja Cuadrada de Rosas Rojas",
         price: 162500,
         image: "/assets/35.webp",
-        description: "Una caja de rosas se recibe distinto que un ramo: se abre, y eso lo cambia todo. Media luna de rosas rojas con follaje verde sobre caja cuadrada negra, lazo rojo y tarjeta de mensaje. Para un aniversario o una declaración que quieres hacer con estilo.",
+        description: "Media luna de rosas rojas con follaje verde sobre caja cuadrada negra y lazo rojo, con tarjeta de mensaje. Estructura, color y elegancia para decir lo importante.",
         categories: ["rosas-rojas", "cajas", "precio-medio"]
     },
     {
         id: 36,
-        name: "Mitad Amor, Mitad Antojo – Corazón de Rosas y Fresas con Chocolate",
+        name: "Corazón de Rosas y Fresas con Chocolate",
         price: 200000,
         image: "/assets/36.webp",
-        description: "Un lado del corazón se mira y el otro se come; los dos se disfrutan igual. Caja corazón dividida entre fresas cubiertas de chocolate y rosas rojas frescas, con tarjeta personalizada. Para sorprender en un cumpleaños o un aniversario y que se acuerde hasta del sabor.",
+        description: "Caja corazón dividida entre fresas cubiertas de chocolate y rosas rojas, con tarjeta personalizada. Uno de nuestros favoritos para cumpleaños y aniversarios.",
         categories: ["rosas-rojas", "cajas", "chocolates", "precio-medio"]
     },
     {
         id: 37,
-        name: "Una Sola es Distinta, Como Ella – Caja de Rosas con Rosa Blanca al Centro",
+        name: "Caja de Rosas con Rosa Blanca Central",
         price: 162500,
         image: "/assets/37.webp",
-        description: "Todas las rosas son rojas menos una, y esa es la que explica el mensaje. Caja negra de rosas rojas con una rosa blanca destacada en el centro y tarjeta con tu texto. Para regalar algo sobrio con un detalle que se nota y se recuerda.",
+        description: "Rosas rojas en caja negra con una rosa blanca destacada en el centro y tarjeta de mensaje. Detalle sobrio con un guiño de originalidad.",
         categories: ["rosas-rojas", "cajas", "precio-medio"]
     },
     {
         id: 38,
-        name: "Hecho Para la Foto – Ramo Rosa con Lunares Dorados",
+        name: "Ramo Rosa con Lunares Dorados",
         price: 137500,
         image: "/assets/38.webp",
-        description: "Es el ramo que termina en historias de Instagram antes de llegar al florero. Rosas rosadas, claveles fucsia y astromelias en envoltura rosa con lunares dorados y tarjeta incluida. Para un cumpleaños joven o una celebración que quieres ver publicada.",
+        description: "Rosas rosadas, claveles fucsia y astromelias en envoltura rosa con lunares dorados y tarjeta incluida. Un ramo festivo y muy fotogénico.",
         categories: ["rosas-rosadas", "mix", "precio-medio"]
     },
     {
         id: 39,
-        name: "Por Cualquier Motivo o Por Ninguno – Ramo Rosa y Marfil con Astromelias",
+        name: "Ramo Rosa y Marfil con Astromelias",
         price: 87500,
         image: "/assets/39.webp",
-        description: "El ramo equilibrado que queda bien en la casa de una mamá, de una novia o de una amiga. Rosas rosadas y marfil con astromelias y follaje fresco en envoltura crema y blanca, en $87.500. Para regalar sin fecha y quedar bien con cualquiera.",
+        description: "Rosas rosadas y marfil con astromelias y follaje fresco en envoltura crema y blanca. Un ramo equilibrado para regalar sin motivo… o por cualquiera.",
         categories: ["rosas-rosadas", "mix", "precio-bajo"]
     },
     {
         id: 40,
-        name: "Uno Para Hoy, Otro Para Siempre – Caja de Rosas y Rosa Preservada",
+        name: "Dúo Caja de Rosas y Rosa Eterna",
         price: 400000,
         image: "/assets/40.webp",
-        description: "Las rosas frescas se disfrutan esta semana; la rosa bajo la cúpula sigue ahí el próximo año. Caja negra con rosas rojas y bombones Ferrero, más una rosa preservada en cristal, entregadas juntas. Para un aniversario o una fecha que quieres que quede marcada.",
+        description: "Caja negra que combina rosas rojas con bombones Ferrero, acompañada de una rosa preservada bajo cúpula de cristal. Un presente que dura mucho más que el día.",
         categories: ["rosas-rojas", "cajas", "chocolates", "precio-alto"]
     }
 ];
@@ -1349,7 +1571,7 @@
             if (searchTerm.trim()) {
                 const q = normalizeText(searchTerm.trim());
                 filtered = filtered.filter(p =>
-                    normalizeText(p.name).includes(q) || normalizeText(p.description || '').includes(q) || productCode(p).includes(q)
+                    normalizeText(p.name).includes(q) || productCode(p).includes(q)
                 );
             }
 
@@ -1377,7 +1599,7 @@
                 return `
                 <div class="product-card" data-categories="${p.categories.join(' ')}">
                     <div class="product-image-container" onclick="openLightbox('${p.image}', '${safeName}', '${formatPrice(p.price)}')">
-                        <img src="${p.image}" alt="${p.name} - arreglo floral a domicilio en Pereira | Floristería Luna Rosa" class="product-image" loading="lazy">
+                        <img src="${p.image}" alt="${p.name}" class="product-image" loading="lazy">
                         <div class="zoom-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
