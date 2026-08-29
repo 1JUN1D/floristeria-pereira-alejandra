@@ -815,3 +815,53 @@
     background: var(--catalog-lavender);
     color: var(--catalog-secondary);
 }
+
+/* ===== Variaciones de cantidad (ej. ramo de rosas 25/50/70/100) ===== */
+.product-variants {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: -0.55rem 0 1.05rem;
+}
+
+.variant-chip {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    padding: 0.3rem 0.55rem;
+    border: 1px solid rgba(201, 168, 106, 0.45);
+    border-radius: 2px;
+    background: #fff;
+    color: var(--catalog-primary-deep);
+    font-size: 0.72rem;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.variant-chip:hover {
+    background: var(--catalog-gold);
+    border-color: transparent;
+    color: #fff;
+}
+
+.variant-qty {
+    font-weight: 500;
+}
+
+.variant-price {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+}
+
+/* "Desde" visible solo en productos con variaciones */
+.price-label.price-label-from {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #9b93a6;
+    font-weight: 500;
+    margin-bottom: 0.15rem;
+}

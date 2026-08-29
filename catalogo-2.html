@@ -13,7 +13,7 @@
   gtag('config', 'G-MNY3LGE203');
 </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo de Floristería Luna Rosa en Pereira: 46 diseños entre ramos de rosas, girasoles, cajas y cofres florales, arreglos con chocolates y peluches. Domicilio en toda la ciudad.">
+    <meta name="description" content="Catálogo de Floristería Luna Rosa en Pereira: 47 diseños entre ramos de rosas, girasoles, cajas y cofres florales, arreglos con chocolates y peluches. Domicilio en toda la ciudad.">
     <meta name="keywords" content="catálogo flores Pereira, ramos de rosas Pereira, girasoles Pereira, cajas de rosas, arreglos con chocolates, Floristería Luna Rosa">
     <title>Catálogo de Productos - Floristería Luna Rosa | Flores y Ramos Fúnebres en Pereira</title>
 
@@ -43,7 +43,7 @@
     <section class="catalog-hero">
         <div class="container">
             <h1>Nuestro Catálogo</h1>
-            <p>Floristería Luna Rosa · 46 diseños entre ramos, cajas de rosas y arreglos fúnebres, con domicilio en toda Pereira</p>
+            <p>Floristería Luna Rosa · 47 diseños entre ramos, cajas de rosas y arreglos fúnebres, con domicilio en toda Pereira</p>
         </div>
     </section>
 
@@ -489,6 +489,20 @@ const products = [
         image: "assets/46.webp",
         description: "Cuando el presupuesto es ajustado pero la persona importaba, esta palma cumple con dignidad. Rosas y claveles rojos, gladiolos blancos y nube enmarcados en hojas de aspidistra; la opción más accesible de la línea sin perder tamaño ni presencia. Coordinamos entrega en sala de velación o iglesia el mismo día.",
         categories: ["funebres", "precio-medio"]
+    },
+    {
+        id: 47,
+        name: "Cuando Ya No Se Pueden Contar – Ramo de Rosas Rojas con Mariposas Doradas",
+        price: 100000,
+        image: "assets/47.webp",
+        description: "Hay regalos que no se explican, se ven y ya. Ramo redondo de rosas rojas frescas en envoltura negra con filos dorados y mariposas metálicas, disponible desde 25 hasta 100 rosas. Para un aniversario, una propuesta o una fecha que quieres que se recuerde por el tamaño.",
+        variants: [
+            { qty: 25, price: 100000 },
+            { qty: 50, price: 162500 },
+            { qty: 70, price: 187500 },
+            { qty: 100, price: 262500 }
+        ],
+        categories: ["rosas-rojas", "precio-medio"]
     }
 ];
 
@@ -603,9 +617,10 @@ const products = [
                         <div class="product-ref">Ref. ${productCode(product)}</div>
                         <h3 class="product-name">${product.name}</h3>
                         <div class="product-description"><div class="pd-clamp">${product.description}</div></div>
+                        ${product.variants ? `<div class="product-variants">${product.variants.map(v => `<a class="variant-chip" target="_blank" href="https://wa.me/573042198477?text=${encodeURIComponent('Hola, me interesa el producto: ' + product.name + ' (Ref. ' + productCode(product) + ') - opción de ' + v.qty + ' rosas por ' + formatPrice(v.price) + ' | Foto: ' + productPhotoUrl(product))}"><span class="variant-qty">${v.qty} rosas</span><span class="variant-price">${formatPrice(v.price)}</span></a>`).join('')}</div>` : ''}
                         <div class="product-footer">
                             <div>
-                                <span class="price-label ${product.oldPrice ? 'price-label-old' : ''}">${product.oldPrice ? formatPrice(product.oldPrice) : 'Desde'}</span>
+                                <span class="price-label ${product.oldPrice ? 'price-label-old' : ''}${product.variants ? ' price-label-from' : ''}">${product.oldPrice ? formatPrice(product.oldPrice) : 'Desde'}</span>
                                 <div class="product-price">${formatPrice(product.price)}</div>
                             </div>
                             <a href="https://wa.me/573042198477?text=${encodeURIComponent('Hola, me interesa el producto: ' + product.name + ' (Ref. ' + productCode(product) + ') - ' + formatPrice(product.price) + ' | Foto: ' + productPhotoUrl(product))}"
