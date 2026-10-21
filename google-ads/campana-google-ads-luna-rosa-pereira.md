@@ -378,7 +378,7 @@ La cuenta de referencia convierte al **33 %** (clic a WhatsApp). Una cuenta nuev
 | 2 | Coronas Fúnebres Pereira | 24 |
 | 3 | Ramos Fúnebres en Pereira | 25 |
 | 4 | Flores para Velorio | 19 |
-| 5 | Coronas desde $175.000 | 22 |
+| 5 | Coronas desde $195.000 | 22 |
 | 6 | Cruces y Palmas Fúnebres | 24 |
 | 7 | Ver Diseños y Precios | 21 |
 | 8 | Entrega el Mismo Día | 20 |
@@ -394,7 +394,7 @@ La cuenta de referencia convierte al **33 %** (clic a WhatsApp). Una cuenta nuev
 
 | # | Descripción | Car. |
 |---|---|---|
-| 1 | Coronas, cruces y palmas fúnebres en Pereira desde $175.000. Entrega hoy mismo. | 79 |
+| 1 | Coronas, cruces y palmas fúnebres en Pereira desde $195.000. Entrega hoy mismo. | 79 |
 | 2 | Ramos fúnebres y arreglos para velorio con entrega inmediata. Mira los precios. | 79 |
 | 3 | Entregamos en salas de velación, iglesias y cementerios de Pereira y Dosquebradas. | 82 |
 | 4 | Incluye cinta con dedicatoria. Atención respetuosa e inmediata por WhatsApp. | 76 |
@@ -444,7 +444,7 @@ Google muestra entre 2 y 6. Cárgalos todos y deja que el sistema elija.
 | Ramos de Rosas Rojas | Bouquets, cajas y ramos buchón | Rosas frescas del cultivo | `https://floristerialunarosa.dondeseria.com/landing-pages/flores-rosas-pereira.html#1` |
 | Flores de Cumpleaños | Con globos y chocolates | Tarjeta personalizada gratis | `https://floristerialunarosa.dondeseria.com/landing-pages/flores-para-cumpleanos-pereira.html#1` |
 | Ramos y Arreglos | Diseños para toda ocasión | Aniversarios, grados y más | `https://floristerialunarosa.dondeseria.com/landing-pages/ramos-flores-elegantes-pereira.html#1` |
-| Arreglos Fúnebres | Coronas y cruces desde $175.000 | Entrega en salas de velación | `https://floristerialunarosa.dondeseria.com/landing-pages/arreglos-funebres-pereira.html#1` |
+| Arreglos Fúnebres | Coronas y cruces desde $195.000 | Entrega en salas de velación | `https://floristerialunarosa.dondeseria.com/landing-pages/arreglos-funebres-pereira.html#1` |
 
 > **Nota sobre las URLs:** Google exige que cada sitelink apunte a un destino distinto del anuncio y de los demás sitelinks. Como todos van a las mismas 6 landings, se diferencian con un ancla numerada (`#1`, `#2`…). El ancla no cambia la página que ve el usuario ni afecta el Nivel de Calidad — solo hace que la URL sea única para el sistema.
 
@@ -455,7 +455,7 @@ Cárgalos **dentro del grupo 06**. Los sitelinks de grupo anulan los de campaña
 | Texto (≤25) | Descripción 1 (≤35) | Descripción 2 (≤35) | URL |
 |---|---|---|---|
 | Coronas y Cruces | Trípode, pedestal y circular | Diseños con foto y precio | `https://floristerialunarosa.dondeseria.com/landing-pages/arreglos-funebres-pereira.html#2` |
-| Ver Precios | Arreglos desde $175.000 | Sin sorpresas al pagar | `https://floristerialunarosa.dondeseria.com/landing-pages/arreglos-funebres-pereira.html#3` |
+| Ver Precios | Arreglos desde $195.000 | Sin sorpresas al pagar | `https://floristerialunarosa.dondeseria.com/landing-pages/arreglos-funebres-pereira.html#3` |
 | Entrega Inmediata | Salas, iglesias y cementerios | Pereira y Dosquebradas | `https://floristerialunarosa.dondeseria.com/landing-pages/arreglos-funebres-pereira.html#4` |
 | Flores para Velorio | Ramos, cojines y corazones | Cinta con dedicatoria | `https://floristerialunarosa.dondeseria.com/landing-pages/arreglos-funebres-pereira.html#5` |
 
@@ -526,7 +526,7 @@ Cada encabezado necesita mínimo 3 valores; carga los 3 encabezados.
 
 - **Llamada:** 304 219 8489, con programación L–D 8 a. m.–6 p. m.
 - **Ubicación:** vincula el perfil de Google Business (sube el CTR en búsquedas "cerca de mí").
-- **Precios:** en el grupo 07 usa el tipo *Servicios* con Corona fúnebre $175.000, Cruz fúnebre, Palma fúnebre — los precios ya están publicados en la landing.
+- **Precios:** en el grupo 07 usa el tipo *Servicios* con Corona fúnebre $195.000, Cruz fúnebre, Palma fúnebre — los precios ya están publicados en la landing.
 - **Mensajes/WhatsApp:** si la cuenta lo permite en Colombia, es la extensión con mejor conversión para este negocio.
 
 ---
